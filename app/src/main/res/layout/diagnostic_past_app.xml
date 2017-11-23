@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/edir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#b0e3f2fd"
+        android:padding="15dp"
+        android:paddingBottom="0dp">
+
+        <EditText
+            android:id="@+id/search_time_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:background="#fff"
+            android:drawableLeft="@mipmap/search"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/filter"
+            android:hint="Search"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:textColor="#000"
+            android:textColorHint="#c9c6c6"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/diagnostic_past_app"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+
+</LinearLayout>

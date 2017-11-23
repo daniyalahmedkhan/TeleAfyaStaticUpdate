@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/update_post_header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@mipmap/profile_bg">
+
+        <ImageView
+            android:id="@+id/back_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/back" />
+
+        <TextView
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="Tag People"
+            android:textColor="#fff" />
+
+        <TextView
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="15dp"
+            android:text="Done"
+            android:textColor="#fff" />
+
+
+    </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#fff"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:background="#fff"
+            android:textColor="#000"
+            android:drawablePadding="10dp"
+            android:textSize="12sp"
+            android:textColorHint="#c9c6c6"
+            android:hint="Search"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="15dp"
+            android:drawableRight="@mipmap/filter"
+            android:drawableLeft="@mipmap/search"
+            android:paddingRight="15dp"
+            android:id="@+id/search_time_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ListView
+            android:background="#fff"
+
+            android:divider="@color/transparent"
+            android:dividerHeight="0dp"
+            android:id="@+id/people_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

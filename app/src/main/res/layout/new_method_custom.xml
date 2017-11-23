@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account Holder"
+                android:id="@+id/AccHolder"
+                android:layout_marginTop="20dp"
+
+                />
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account Holder"
+                android:id="@+id/AccHolderName"
+                android:textColor="@color/colorText"
+                android:layout_marginTop="10dp"
+
+                />
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <TextView
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account Number"
+                android:id="@+id/AccNumber"
+                android:layout_marginTop="20dp"
+
+                />
+
+            <TextView
+                android:textStyle="bold"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account Number"
+                android:id="@+id/AccNumber2"
+                android:textColor="@color/colorText"
+                android:layout_marginTop="10dp"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <TextView
+                android:textSize="12sp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BANK"
+                android:id="@+id/BankName"
+                android:layout_marginTop="20dp"
+
+                />
+
+            <TextView
+                android:textStyle="bold"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BANK"
+                android:id="@+id/BankName2"
+                android:textColor="@color/colorText"
+                android:layout_marginTop="10dp"
+
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <TextView
+                android:textSize="12sp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BRANCH"
+                android:id="@+id/BranchName"
+                android:layout_marginTop="20dp"
+
+                />
+
+            <TextView
+                android:textStyle="bold"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BRANCH"
+                android:id="@+id/BranchName2"
+                android:textColor="@color/colorText"
+                android:layout_marginTop="10dp"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <TextView
+                android:textSize="12sp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BENEFICIARY ADDRESS"
+                android:id="@+id/BeneAdd"
+                android:layout_marginTop="20dp"
+
+                />
+
+            <TextView
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Natraj Studio,Azad Nagar,Andheri East Mumbai,Mahrashtra 400047"
+                android:id="@+id/BeneAdd2"
+                android:textColor="@color/colorText"
+                android:layout_marginTop="10dp"
+
+                />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:paddingBottom="20dp"
+            android:layout_marginTop="20dp"
+
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:textSize="12sp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SWIFT CODE"
+
+                    />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CHE1233433"
+                    android:id="@+id/SwifCode"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorText"                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+
+                    />
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_weight="2"
+                android:gravity="center"
+
+                >
+
+                <TextView
+                    android:textSize="12sp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UNIQUE CODE"
+
+                    />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="51487218"
+                    android:id="@+id/uniquecode"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorText"                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+        
+</LinearLayout>

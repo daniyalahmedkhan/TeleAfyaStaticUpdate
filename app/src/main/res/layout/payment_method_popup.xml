@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:paddingBottom="20dp"
+        android:id="@+id/relativeTop">
+
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/Top">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/payment_method_vector"
+
+                />
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:id="@+id/Relative2Top"
+            android:layout_below="@id/Top"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorText"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:id="@+id/TxtHead"
+                android:text="Availability" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="you can opt option"
+                android:layout_below="@id/TxtHead"
+                android:id="@+id/txtSmall"
+                android:textColor="@color/colorText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="below for you treatment"
+                android:layout_below="@id/txtSmall"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorText"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                />
+
+
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            android:layout_below="@id/Relative2Top"
+            android:layout_marginTop="20dp">
+
+
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Relative2Top"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+
+
+            <Button
+                android:id="@+id/clinic"
+                android:background="#58a7f2"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:layout_marginTop="20dp"
+
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:gravity="center"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@mipmap/pay_at_clinic"
+                android:drawableRight="@mipmap/next_arrow_white"
+                android:layout_centerHorizontal="true"
+                android:text="Pay at Clinic"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp" />
+
+
+            <Button
+                android:id="@+id/pay"
+                android:background="#58a7f2"
+                android:textAllCaps="false"
+                android:layout_below="@id/clinic"
+                android:textColor="#fff"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@mipmap/instant_pay"
+                android:drawableRight="@mipmap/next_arrow_white"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:text="Instant Pay"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp" />
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

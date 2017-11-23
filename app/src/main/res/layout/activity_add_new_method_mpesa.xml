@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context="com.example.ast.teleafya.Ui.Pharmacy_Ui.AddNewMethod_mpesa">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="@mipmap/profile_bg">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/back"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="45dp"
+                    android:id="@+id/back"
+                    />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Method"
+
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:paddingRight="20dp"
+            android:layout_marginTop="40dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="1dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+
+        <Button
+            android:background="@drawable/shadow"
+
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Bank Details"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/bankDetails"
+            android:textColor="#346da3"
+            />
+        <Button
+            android:background="@drawable/gradient_curve"
+
+            android:layout_marginLeft="10dp"
+            android:id="@+id/mpesaDetails"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="M-PESA"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#fff"
+            />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:dividerHeight="0dp"
+        android:divider="@color/transparent"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/listNewMethod"
+        ></ListView>
+
+</LinearLayout>

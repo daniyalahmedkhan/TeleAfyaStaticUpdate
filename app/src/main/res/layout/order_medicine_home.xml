@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_outside"
+        android:background="@mipmap/profile_bg"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <TextView
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:text="Mumbai"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/back_home"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="15dp"
+            android:background="@mipmap/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="45dp"
+            android:src="@mipmap/add_to_cart"
+            />
+
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="80dp"
+        android:background="#b0e3f2fd"
+        android:id="@+id/edir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:background="#fff"
+            android:textColor="#000"
+            android:drawablePadding="10dp"
+            android:textSize="12sp"
+            android:textColorHint="#c9c6c6"
+            android:hint="Search"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="15dp"
+            android:drawableRight="@mipmap/filter"
+            android:drawableLeft="@mipmap/search"
+            android:paddingRight="15dp"
+            android:id="@+id/search_time_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_outside"
+        >
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/toolbar_outside"
+       android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/banner"
+        android:layout_below="@id/toolbar_outside"
+        android:layout_marginTop="15dp">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="6dp"
+            android:src="@mipmap/main_banner" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/banner"
+        android:id="@+id/upload"
+        android:layout_marginLeft="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorWhite"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorText"
+            android:id="@+id/Text1"
+            android:layout_marginLeft="10dp"
+            android:text="Order with Prescription"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Text2"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/Text1"
+            android:text="Quick Buy! Upto 20% discount"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/upload_icon"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentEnd="true"
+            />
+
+
+    </RelativeLayout>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:id="@+id/top"
+           android:paddingLeft="10dp"
+           android:paddingRight="10dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_below="@id/upload"
+           android:weightSum="2"
+           >
+
+           <android.support.v7.widget.CardView
+               xmlns:card_view="http://schemas.android.com/apk/res-auto"
+               android:id="@+id/card_view1"
+               android:layout_gravity="center"
+               android:layout_width="match_parent"
+               android:layout_marginTop="5dp"
+               android:layout_weight="1"
+               card_view:cardUseCompatPadding="true"
+               android:layout_height="200dp"
+               card_view:cardCornerRadius="2dp">
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:paddingBottom="10dp"
+                   android:id="@+id/LDL"
+                   android:paddingTop="10dp"
+                   android:orientation="vertical">
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal"
+                       android:layout_gravity="center"
+                       android:paddingLeft="5dp"
+                       android:paddingRight="5dp"
+                       android:layout_marginLeft="5dp"
+                       android:layout_marginRight="5dp"
+                       >
+
+                       <ImageView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:id="@+id/img1"
+                           android:layout_marginTop="10dp"
+                           android:src="@mipmap/medicines"
+                           />
+
+
+
+                   </LinearLayout>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="40dp"
+                       android:textColor="@color/colorText"
+                        android:layout_gravity="center"
+                       android:text="MEDICINES"
+                       android:gravity="center"
+                       android:id="@+id/Medi"
+                       android:textStyle="bold"
+                       android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                       android:layout_marginTop="15dp"
+                       />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="@color/colorText"
+                       android:layout_gravity="center"
+                       android:text="20% off"
+                       android:id="@+id/MediOff"
+                       android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                       android:layout_marginTop="5dp"
+                       />
+
+
+
+               </LinearLayout>
+           </android.support.v7.widget.CardView>
+
+           <android.support.v7.widget.CardView
+               xmlns:card_view="http://schemas.android.com/apk/res-auto"
+               android:id="@+id/card_view3"
+               android:layout_gravity="center"
+               android:layout_width="match_parent"
+               android:layout_marginTop="5dp"
+               android:layout_weight="1"
+               card_view:cardUseCompatPadding="true"
+               android:layout_height="200dp"
+               card_view:cardCornerRadius="2dp">
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:paddingBottom="10dp"
+                   android:id="@+id/LDL2"
+                   android:paddingTop="10dp"
+                   android:orientation="vertical">
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal"
+                       android:layout_gravity="center"
+                       android:paddingLeft="5dp"
+                       android:paddingRight="5dp"
+                       android:layout_marginLeft="10dp"
+                       android:layout_marginRight="10dp"
+                       >
+
+                       <ImageView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:id="@+id/img2"
+                           android:layout_marginTop="10dp"
+                           android:src="@mipmap/lab_tests_vector"
+                           />
+
+
+
+                   </LinearLayout>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="40dp"
+                       android:textColor="@color/colorText"
+                       android:layout_gravity="center"
+                       android:text="LAB TESTS"
+                       android:id="@+id/Medi2"
+                       android:gravity="center"
+                       android:textStyle="bold"
+                       android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                       android:layout_marginTop="15dp"
+                       />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="@color/colorText"
+                       android:layout_gravity="center"
+                       android:text="33% off"
+                       android:id="@+id/MediOff2"
+                       android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                       android:layout_marginTop="5dp"
+                       />
+
+
+
+               </LinearLayout>
+           </android.support.v7.widget.CardView>
+
+
+       </LinearLayout>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:id="@+id/top2"
+           android:paddingLeft="10dp"
+           android:paddingRight="10dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_below="@id/top"
+           android:weightSum="2"
+           >
+
+           <android.support.v7.widget.CardView
+               xmlns:card_view="http://schemas.android.com/apk/res-auto"
+               android:id="@+id/card_view4"
+               android:layout_gravity="center"
+               android:layout_width="match_parent"
+               android:layout_marginTop="5dp"
+               android:layout_weight="1"
+               card_view:cardUseCompatPadding="true"
+               android:layout_height="200dp"
+               card_view:cardCornerRadius="2dp">
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:paddingBottom="10dp"
+                   android:id="@+id/LDL3"
+                   android:paddingTop="10dp"
+                   android:orientation="vertical">
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal"
+                       android:layout_gravity="center"
+                       android:paddingLeft="5dp"
+                       android:paddingRight="5dp"
+                       android:layout_marginLeft="5dp"
+                       android:layout_marginRight="5dp"
+                       >
+
+                       <ImageView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:id="@+id/img3"
+                           android:layout_marginTop="10dp"
+                           android:src="@mipmap/health_products"
+                           />
+
+
+
+                   </LinearLayout>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="40dp"
+                       android:textColor="@color/colorText"
+                       android:layout_gravity="center"
+                       android:text="HEALTH PRODUCTS"
+                       android:id="@+id/Medi3"
+                       android:gravity="center"
+                       android:textStyle="bold"
+                       android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                       android:layout_marginTop="15dp"
+                       />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="@color/colorText"
+                       android:layout_gravity="center"
+                       android:text="20% off"
+                       android:id="@+id/MediOff3"
+                       android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                       android:layout_marginTop="5dp"
+                       />
+
+
+
+               </LinearLayout>
+           </android.support.v7.widget.CardView>
+
+           <android.support.v7.widget.CardView
+               xmlns:card_view="http://schemas.android.com/apk/res-auto"
+               android:id="@+id/card_view5"
+               android:layout_gravity="center"
+               android:layout_width="match_parent"
+               android:layout_marginTop="5dp"
+               android:layout_weight="1"
+               card_view:cardUseCompatPadding="true"
+               android:layout_height="200dp"
+               card_view:cardCornerRadius="2dp">
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:paddingBottom="10dp"
+                   android:id="@+id/LDL4"
+                   android:paddingTop="10dp"
+                   android:orientation="vertical">
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal"
+                       android:layout_gravity="center"
+                       android:paddingLeft="5dp"
+                       android:paddingRight="5dp"
+                       android:layout_marginLeft="10dp"
+                       android:layout_marginRight="10dp"
+                       >
+
+                       <ImageView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:id="@+id/img4"
+                           android:layout_marginTop="10dp"
+                           android:src="@mipmap/past_orders"
+                           />
+
+
+
+                   </LinearLayout>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="40dp"
+                       android:textColor="@color/colorText"
+                       android:layout_gravity="center"
+                       android:text="PAST ORDERS"
+                       android:id="@+id/Medi4"
+                       android:gravity="center"
+                       android:textStyle="bold"
+                       android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                       android:layout_marginTop="15dp"
+                       />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="@color/colorText"
+                       android:layout_gravity="center"
+                       android:text="35 orders"
+                       android:id="@+id/MediOff4"
+                       android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                       android:layout_marginTop="5dp"
+                       />
+
+
+
+               </LinearLayout>
+           </android.support.v7.widget.CardView>
+
+
+       </LinearLayout>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/top2"
+           android:paddingBottom="30dp"
+           android:layout_marginBottom="10dp"
+           android:background="@color/colorWhite"
+           android:layout_marginTop="20dp">
+
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/colorText"
+               android:text="FEATURED PRODUCTS"
+               android:layout_marginLeft="15dp"
+               android:id="@+id/Featured"
+               android:layout_marginTop="15dp"
+               android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+               />
+
+           <HorizontalScrollView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+                android:layout_below="@id/Featured"
+               android:layout_marginLeft="25dp">
+
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:orientation="horizontal"
+                   >
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@mipmap/home_medicine_slider"
+                       />
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@mipmap/home_medicine_slider2"
+                       />
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@mipmap/home_medicine_slider"
+                       />
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@mipmap/home_medicine_slider2"
+                       />
+
+               </LinearLayout>
+           </HorizontalScrollView>
+
+
+       </RelativeLayout>
+
+
+   </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

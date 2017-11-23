@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/flag"
+        android:background="@mipmap/canada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="#346da3"
+        android:layout_marginLeft="10sp"
+    android:layout_gravity="center"
+    android:text="Country Name"
+    android:id="@+id/country_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:gravity="right"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+
+        android:background="@mipmap/next_arrow"
+
+        android:text="Country Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

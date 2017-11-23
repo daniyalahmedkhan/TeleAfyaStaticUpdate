@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+            android:layout_marginRight="10dp"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/jpg"
+            android:id="@+id/imag2"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="20dp"
+            />
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Blood Pressure"
+               android:textSize="10dp"
+               android:gravity="center"
+
+               android:textColor="@color/colorText"
+               />
+
+       </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/png"
+                android:id="@+id/imag3"
+                android:layout_marginRight="10dp"
+                android:paddingBottom="20dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cholesterol"
+                android:textSize="10dp"
+                android:gravity="center"
+
+                android:textColor="@color/colorText"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/png"
+                android:id="@+id/imag4"
+                android:layout_marginRight="10dp"
+                android:paddingBottom="20dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TD Cholesterol"
+                android:textSize="10dp"
+                android:gravity="center"
+                android:textColor="@color/colorText"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/pdf"
+                android:id="@+id/imag1"
+                android:layout_marginRight="10dp"
+                android:paddingBottom="20dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Blood Pressure"
+                android:textSize="10dp"
+                android:gravity="center"
+
+                android:textColor="@color/colorText"
+                />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

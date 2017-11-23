@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:id="@+id/home_container"
+    android:orientation="vertical"
+    tools:context="com.example.ast.teleafya.Ui.Pharmacy_Ui.Pharmacy_AddMedicine">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/timeline_header"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@mipmap/profile_bg">
+
+            <ImageView
+                android:id="@+id/back_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="45dp"
+                android:background="@mipmap/back" />
+
+            <TextView
+                android:id="@+id/home_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:text="Add &amp; Update Medicine"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+
+            <ImageView
+                android:id="@+id/add_medicine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="40dp"
+                android:background="@mipmap/add"
+                android:padding="10dp" />
+
+        </RelativeLayout>
+
+        <!--<RelativeLayout-->
+        <!--android:layout_marginRight="30dp"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:layout_marginTop="100dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="-30dp"
+            android:background="@mipmap/search_bg">
+
+
+            <EditText
+                android:id="@+id/search_time_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="#fff"
+                android:drawableLeft="@mipmap/search"
+                android:drawablePadding="10dp"
+                android:drawableRight="@mipmap/filter"
+                android:hint="Search"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:textColor="#000"
+                android:textColorHint="#c9c6c6"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="Medicine Suggestions"
+                android:textColor="#7391a2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?attr/colorButtonNormal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"></LinearLayout>
+
+            <ListView
+                android:id="@+id/medicine_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:divider="@color/wallet_bright_foreground_holo_dark"
+                android:dividerHeight="1dp"></ListView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
+
+    <!--</RelativeLayout>-->
+
+
+
+

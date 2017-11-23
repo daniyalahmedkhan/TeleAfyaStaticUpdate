@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/payment_container"
+    tools:context="com.example.ast.teleafya.Ui.Pharmacy_Ui.Pharmacy_PaymentActivity">
+
+    <RelativeLayout
+        android:id="@+id/timeline_header"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@mipmap/home_header">
+
+        <ImageView
+            android:id="@+id/back_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="50dp"
+            android:background="@mipmap/back" />
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:gravity="center">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_user_name"
+                android:text="$5000.00"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/home_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/linear"
+            android:gravity="center"
+            android:text="Last Week Balance"
+            android:textColor="#fff"
+            android:textSize="10sp" />
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/payment_dayslist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timeline_header"
+        android:background="#fff"
+        android:divider="?attr/colorButtonNormal"
+        android:dividerHeight="1dp"></ListView>
+
+
+</RelativeLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:id="@+id/relativeTop">
+
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:id="@+id/Relative2Top"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorText"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:id="@+id/TxtHead"
+                android:text="Availability" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="you can opt option"
+                    android:layout_below="@id/TxtHead"
+                    android:id="@+id/txtSmall"
+                    android:textColor="@color/colorText"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="below for you treatment"
+                android:layout_below="@id/txtSmall"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorText"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                />
+
+
+
+
+
+        </RelativeLayout>
+
+
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+
+           android:layout_below="@id/Relative2Top"
+           android:layout_marginTop="20dp">
+
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/Linear1"
+               android:orientation="horizontal">
+
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="20dp"
+                    android:src="@mipmap/home_doctors_list_search"
+                   />
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@mipmap/clinic"
+                   android:layout_marginLeft="20dp"
+                   />
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:id="@+id/Linear2"
+               android:paddingLeft="15dp"
+               android:paddingRight="15dp"
+               android:layout_centerHorizontal="true"
+               android:layout_below="@id/Linear1">
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/colorText"
+                   android:layout_marginRight="35dp"
+                  android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                   android:text="Home"
+                   />
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/colorText"
+                   android:layout_marginLeft="50dp"
+                   android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                   android:text="Clinic"
+                   />
+
+
+           </LinearLayout>
+
+
+
+
+
+
+       </RelativeLayout>
+
+
+
+        <Button
+            android:id="@+id/confirm_app"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="20dp"
+            android:background="#58a7f2"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:layout_marginTop="20dp"
+
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="Apply Filters"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp" />
+
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/update_post_header"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@mipmap/profile_bg">
+
+            <ImageView
+                android:id="@+id/back_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/back" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:background="@drawable/dr_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/follow_count"
+            android:text="2350"
+            android:textColor="#1987f1"
+            android:layout_below="@+id/update_post_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="#346da3"
+            android:textSize="12sp"
+            android:text="FOLLOWERS"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/follow_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textStyle="bold"
+
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="35dp"
+            android:id="@+id/following_count"
+            android:text="2350"
+            android:textColor="#1987f1"
+            android:layout_below="@+id/update_post_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:textColor="#346da3"
+            android:textSize="12sp"
+            android:text="FOLLOWING"
+            android:layout_marginRight="15dp"
+            android:layout_below="@+id/following_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="#fff"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#346da3"
+            android:gravity="center"
+            android:text="Dr Vijay Sharma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+       <LinearLayout
+
+           android:layout_gravity="center"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+           <ImageView
+
+               android:background="@mipmap/country"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+
+           <TextView
+               android:layout_marginLeft="5dp"
+               android:textSize="12sp"
+               android:textColor="#7391a2"
+               android:text="Mumbai India"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+
+
+       </LinearLayout>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:text="Follow"
+            android:background="#58a7f2"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:layout_marginTop="10dp"
+
+            android:id="@+id/tag_people_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

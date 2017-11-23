@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_marginTop="150dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Relative1"
+        android:background="@color/colorWhite">
+    
+        
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:id="@+id/Linear1"
+            android:layout_marginTop="30dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/date"
+                android:id="@+id/Clock"
+
+                />
+
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:text="Timing:"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorText"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                />
+
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:hint="Mon-Sat"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/TimeId"
+                android:textColor="@color/colorText"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="(10:30AM - 15:30 , 17:30 - 16:30)"
+                />
+            
+
+            
+
+        </LinearLayout>
+        
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/Linear2"
+            android:layout_marginLeft="140dp"
+            android:layout_below="@id/Linear1">
+            
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:hint="Sun"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="(11:30AM - 16:30PM)" />
+
+
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/Linear2"
+            android:background="@color/colorGrey"/>
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="90dp"
+            android:background="@color/colorGrey"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="52dp"
+
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Relative1"
+        android:id="@+id/Relative2"
+
+        android:background="@color/colorWhite">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:id="@+id/Linear3"
+            android:layout_marginTop="-5dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/order_mobile"
+
+                />
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:text="Phone:"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorText"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="022 2576 3333"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/TimeId2"
+                android:textColor="@color/colorText"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                />
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/Linear4"
+            android:layout_marginLeft="140dp"
+            android:layout_below="@id/Linear3">
+
+
+
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/Linear4"
+            android:background="@color/colorGrey"/>
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="90dp"
+            android:background="@color/colorGrey"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="20dp"
+
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Relative2"
+        android:id="@+id/Relative3"
+        android:layout_marginTop="-15dp"
+        android:background="@color/colorWhite">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:id="@+id/Linear5"
+            android:layout_marginTop="-5dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/photos"
+
+                />
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:text="Photos:"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorText"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                />
+
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="25dp">
+                
+                
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/img_1"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/img_2"
+                    />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/img_3"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/img_4"
+                        />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/Linear6"
+            android:layout_marginLeft="140dp"
+            android:layout_below="@id/Linear5">
+
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/Linear6"
+            android:background="@color/colorGrey"/>
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="90dp"
+            android:background="@color/colorGrey"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="20dp"
+
+            />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Relative3"
+        android:id="@+id/Relative4"
+        android:background="@color/colorWhite">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:id="@+id/Linear7"
+            android:layout_marginTop="-5dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/pin2"
+
+                />
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:text="Address:"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorText"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Hiranderi Hospital Road, Hill side Avenue,"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/TimeId4"
+                android:textColor="@color/colorText"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/Linear8"
+            android:layout_marginLeft="140dp"
+            android:layout_below="@id/Linear7">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Powai, Mumbai, Maharashtra 40076"
+                />
+
+
+
+        </LinearLayout>
+
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/Linear7"
+           android:layout_marginTop="40dp"
+           android:layout_centerHorizontal="true"
+           android:text="Get Direction"
+           android:id="@+id/TextDirections"
+           android:textColor="@color/colorText"
+           android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+           />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TextDirections"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:id="@+id/DownArrow"
+            android:src="@mipmap/down_arrow"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/DownArrow"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/map"
+            />
+
+
+    </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

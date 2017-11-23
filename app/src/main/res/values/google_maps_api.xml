@@ -1,0 +1,16 @@
+<resources>
+    <!--
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=99:54:13:DA:32:A9:96:96:CD:D9:D7:A6:A8:0C:CA:3A:37:DD:3E:3D%3Bemployeeconnect.panacloud.com
+
+    You can also add your credentials to an existing key, using this line:
+    99:54:13:DA:32:A9:96:96:CD:D9:D7:A6:A8:0C:CA:3A:37:DD:3E:3D;employeeconnect.panacloud.com
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" translatable="false" templateMergeStrategy="preserve">
+        AIzaSyBvHMcbTOCo0BnwqQLPBmyk5y3nCUY-sKk
+    </string>
+</resources>

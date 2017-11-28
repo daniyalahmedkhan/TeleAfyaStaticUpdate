@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_outside"
+        android:background="@mipmap/profile_bg"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:text="File"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/back_home"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="15dp"
+            android:background="@mipmap/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:id="@+id/Top"
+        android:layout_below="@id/toolbar_outside"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/pdf_img"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/gray_edit"
+            android:layout_marginRight="13dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/gray_delete"
+            android:layout_marginRight="13dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/gray_share"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

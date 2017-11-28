@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_outside"
+        android:background="@mipmap/profile_bg"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:text="My Documents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/back_home"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="15dp"
+            android:background="@mipmap/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view1"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                card_view:cardElevation="5dp"
+                card_view:cardUseCompatPadding="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:id="@+id/docList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@mipmap/sort"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_marginTop="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/profile_pic_member1"
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:background="@mipmap/pdf"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp" />
+
+
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/profile_pic_member1"
+                        android:layout_marginTop="15dp"
+                        android:textStyle="bold"
+                        android:textColor="#346da3"
+                        android:textSize="15sp"
+                        android:id="@+id/member_name1"
+                        android:text="INVOICE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_below="@+id/member_name1"
+                        android:id="@+id/age1"
+                        android:layout_marginTop="30dp"
+                        android:textColor="#346da3"
+                        android:textSize="10sp"
+                        android:layout_centerHorizontal="true"
+                        android:text="Record and keep track of your report"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/age1">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:id="@+id/view1"
+                            android:background="@color/colorGrey"
+                            />
+
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_below="@+id/view1"
+                            android:id="@+id/date1"
+                            android:layout_marginTop="10dp"
+                            android:textColor="#346da3"
+                            android:textSize="10sp"
+                            android:layout_centerHorizontal="true"
+                            android:text="20th May 2017"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view2"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                card_view:cardElevation="5dp"
+                card_view:cardUseCompatPadding="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@mipmap/sort"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_marginTop="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/profile_pic_member2"
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:background="@mipmap/png"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp" />
+
+
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/profile_pic_member2"
+                        android:layout_marginTop="15dp"
+                        android:textStyle="bold"
+                        android:textColor="#346da3"
+                        android:textSize="15sp"
+                        android:id="@+id/member_name2"
+                        android:text="PRESCRIPTION"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_below="@+id/member_name2"
+                        android:id="@+id/age2"
+                        android:layout_marginTop="30dp"
+                        android:textColor="#346da3"
+                        android:textSize="10sp"
+                        android:layout_centerHorizontal="true"
+                        android:text="Record and keep track of your report"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/age2">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:id="@+id/view2"
+                            android:background="@color/colorGrey"
+                            />
+
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_below="@+id/view2"
+                            android:id="@+id/date2"
+                            android:layout_marginTop="10dp"
+                            android:textColor="#346da3"
+                            android:textSize="10sp"
+                            android:layout_centerHorizontal="true"
+                            android:text="20th May 2017"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view3"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                card_view:cardElevation="5dp"
+                card_view:cardUseCompatPadding="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@mipmap/sort"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_marginTop="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/profile_pic_member3"
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:background="@mipmap/pdf"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp" />
+
+
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/profile_pic_member3"
+                        android:layout_marginTop="15dp"
+                        android:textStyle="bold"
+                        android:textColor="#346da3"
+                        android:textSize="15sp"
+                        android:id="@+id/member_name3"
+                        android:text="INVOICE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_below="@+id/member_name3"
+                        android:id="@+id/age3"
+                        android:layout_marginTop="30dp"
+                        android:textColor="#346da3"
+                        android:textSize="10sp"
+                        android:layout_centerHorizontal="true"
+                        android:text="Record and keep track of your report"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/age3">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:id="@+id/view3"
+                            android:background="@color/colorGrey"
+                            />
+
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_below="@+id/view3"
+                            android:id="@+id/date3"
+                            android:layout_marginTop="10dp"
+                            android:textColor="#346da3"
+                            android:textSize="10sp"
+                            android:layout_centerHorizontal="true"
+                            android:text="20th May 2017"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view4"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                card_view:cardElevation="5dp"
+                card_view:cardUseCompatPadding="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@mipmap/sort"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_marginTop="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/profile_pic_member4"
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:background="@mipmap/png"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp" />
+
+
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/profile_pic_member4"
+                        android:layout_marginTop="15dp"
+                        android:textStyle="bold"
+                        android:textColor="#346da3"
+                        android:textSize="15sp"
+                        android:id="@+id/member_name4"
+                        android:text="PRESCRIPTION"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_below="@+id/member_name4"
+                        android:id="@+id/age4"
+                        android:layout_marginTop="30dp"
+                        android:textColor="#346da3"
+                        android:textSize="10sp"
+                        android:layout_centerHorizontal="true"
+                        android:text="Record and keep track of your report"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/age4">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:id="@+id/view4"
+                            android:background="@color/colorGrey"
+                            />
+
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_below="@+id/view4"
+                            android:id="@+id/date4"
+                            android:layout_marginTop="10dp"
+                            android:textColor="#346da3"
+                            android:textSize="10sp"
+                            android:layout_centerHorizontal="true"
+                            android:text="20th May 2017"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:paddingTop="10dp"
+            android:orientation="vertical"
+            android:background="@color/colorWhite">
+
+
+            <Button
+                android:id="@+id/confirm_app"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="20dp"
+                android:background="#58a7f2"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:text="Upload"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

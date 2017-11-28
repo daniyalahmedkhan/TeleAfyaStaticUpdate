@@ -3,6 +3,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:orientation="vertical"
         android:background="#fff"
+    android:id="@+id/activity_health"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -88,6 +89,7 @@
                                     android:layout_marginBottom="15dp"
                                     android:gravity="center"
                                     android:orientation="vertical"
+                                    android:id="@+id/Linear1"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content">
 
@@ -103,7 +105,7 @@
 
                                         android:textStyle="bold"
                                         android:textColor="#346da3"
-                                        android:text="MEDICATION"
+                                        android:text="HEALTH PROFILE"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content" />
                                     <TextView
@@ -134,6 +136,7 @@
                                 <LinearLayout
                                     android:layout_marginBottom="15dp"
                                     android:gravity="center"
+                                    android:id="@+id/Document"
                                     android:orientation="vertical"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content">
@@ -149,7 +152,7 @@
 
                                         android:textStyle="bold"
                                         android:textColor="#346da3"
-                                        android:text="VACCINATION"
+                                        android:text="MY DOCUMENT"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content" />
                                     <TextView

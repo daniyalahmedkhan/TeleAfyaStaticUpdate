@@ -1,5 +1,7 @@
 package com.example.ast.teleafya.Ui.Patient_Ui;
 
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
@@ -17,6 +19,7 @@ public class Health_VaultActivity extends AppCompatActivity {
 
     public LinearLayout home_view,appointment_view,timeline_view,message_view,provider_container;
     public ImageView back_image;
+    LinearLayout   L1 , L2 , L3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +41,10 @@ public class Health_VaultActivity extends AppCompatActivity {
 
             getWindow().setStatusBarColor(getResources().getColor(R.color.transparent));
         }
+
+        L1 = (LinearLayout) findViewById(R.id.Linear1);
+        L2 = (LinearLayout) findViewById(R.id.Document);
+        L3 = (LinearLayout) findViewById(R.id.test_order_provider);
         home_view = (LinearLayout) findViewById(R.id.home_view);
         provider_container = (LinearLayout) findViewById(R.id.provider_container);
         appointment_view = (LinearLayout) findViewById(R.id.appointment_view);
@@ -50,6 +57,51 @@ public class Health_VaultActivity extends AppCompatActivity {
                 Intent intent  =new Intent(Health_VaultActivity.this,Patient_ProviderActivity.class);
                 startActivity(intent);
                 finish();
+            }
+        });
+
+        L2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                FragmentManager fragmentManager = getFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager
+                        .beginTransaction();
+                health_profile_doc_list fragmentS1 = new health_profile_doc_list();
+                getSupportFragmentManager().beginTransaction().add(R.id.activity_health, fragmentS1).commit();
+
+
+
+            }
+        });
+
+        L3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+                FragmentManager fragmentManager = getFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager
+                        .beginTransaction();
+                health_profile_med_tab fragmentS1 = new health_profile_med_tab();
+                getSupportFragmentManager().beginTransaction().add(R.id.activity_health, fragmentS1).commit();
+
+
+            }
+        });
+
+        L1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                FragmentManager fragmentManager = getFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager
+                        .beginTransaction();
+                health_profile_tab fragmentS1 = new health_profile_tab();
+                getSupportFragmentManager().beginTransaction().add(R.id.activity_health, fragmentS1).commit();
+
+
+
             }
         });
 

@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:id="@+id/toolbar_outside"
+        android:background="@mipmap/profile_bg"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:text="Vaccine Details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/back_home"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="15dp"
+            android:background="@mipmap/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_outside">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/diphtheria_and"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorText"
+                            android:textStyle="bold"
+                            android:layout_marginTop="2dp"
+                            android:text="Hepatitis B (HBV)"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Diphtheria and tetanus toxoide (DT) vaccine is a vaccine. Diphtheria and tetanus toxoide (DT) vaccine is a vaccine. "
+                            />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/Relative2show"
+                android:visibility="visible"
+                android:layout_marginRight="10dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Relative1"
+                    android:background="@color/colorWhite">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal"
+                        android:id="@+id/Linear1"
+                        android:layout_marginTop="30dp">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/tab"
+                            android:id="@+id/Clock"
+                            android:layout_marginTop="8dp"
+
+                            />
+
+
+                        <TextView
+                            android:layout_width="55dp"
+                            android:layout_height="wrap_content"
+                            android:text="Vaccine:"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/colorText"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                            />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="28th July 2017"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/TimeId"
+                            android:textColor="@color/colorText"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                            />
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/Linear2n"
+                        android:layout_marginLeft="140dp"
+                        android:layout_below="@id/Linear1">
+
+
+
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_below="@id/Linear2n"
+                        android:background="@color/colorGrey"/>
+
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="55dp"
+                        android:background="@color/colorGrey"
+                        android:layout_marginLeft="28dp"
+                        android:layout_marginTop="52dp"
+
+                        />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Relative1"
+                    android:id="@+id/Relative2n"
+
+                    android:background="@color/colorWhite">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal"
+                        android:id="@+id/Linear3"
+                        android:layout_marginTop="-5dp">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/tab"
+                            android:layout_marginTop="8dp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="55dp"
+                            android:layout_height="wrap_content"
+                            android:text="Timing:"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/colorText"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                            />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Mon-Sat (10:30AM - 15:30, 17:30)"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/TimeId2"
+                            android:textColor="@color/colorText"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                            />
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/Linear4"
+                        android:layout_marginLeft="140dp"
+                        android:layout_below="@id/Linear3">
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_below="@id/Linear4"
+                        android:background="@color/colorGrey"/>
+
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="55dp"
+                        android:background="@color/colorGrey"
+                        android:layout_marginLeft="28dp"
+                        android:layout_marginTop="20dp"
+
+                        />
+
+
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Relative2n"
+                    android:id="@+id/Relative3"
+                    android:layout_marginTop="-15dp"
+                    android:background="@color/colorWhite">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal"
+                        android:id="@+id/Linear5"
+                        android:layout_marginTop="-5dp">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/tab"
+                            android:layout_marginTop="8dp"
+                            />
+
+                        <TextView
+                            android:layout_width="55dp"
+                            android:layout_height="wrap_content"
+                            android:text="Hospital:"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/colorText"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                            />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Hirandani Hospital Mumbai"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/TimeId3"
+                            android:textColor="@color/colorText"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                            />
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/Linear6"
+                        android:layout_marginLeft="140dp"
+                        android:layout_below="@id/Linear5">
+
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_below="@id/Linear6"
+                        android:background="@color/colorGrey"/>
+
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="55dp"
+                        android:background="@color/colorGrey"
+                        android:layout_marginLeft="28dp"
+                        android:layout_marginTop="20dp"
+
+                        />
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Relative3"
+                    android:id="@+id/Relative4"
+                    android:background="@color/colorWhite">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal"
+                        android:id="@+id/Linear7"
+                        android:layout_marginTop="-5dp">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/tab"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Location:"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/colorText"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                            />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Hiranandani Hospital Road, Hill Side Avenue, Powai, Mumbai, Maharashtra 400076"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/TimeId5"
+                            android:textColor="@color/colorText"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                            />
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/Linear8"
+                        android:layout_marginLeft="140dp"
+                        android:layout_below="@id/Linear7">
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical">
+
+
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="@color/colorText"
+                       android:text="Get Direction"
+                       />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/map"
+                        android:layout_marginTop="10dp"
+                        />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

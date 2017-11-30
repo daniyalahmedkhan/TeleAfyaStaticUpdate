@@ -10,26 +10,34 @@
 
 
     <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-    <ImageView
         android:layout_width="match_parent"
-        android:id="@+id/tab_cont"
-        android:src="@mipmap/top_logo_bg"
-        android:layout_height="200dp"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="CHOOSE YOUR COUNTRY FROM LIST"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="CHOOSE COUNTRY"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/tab_cont"
+            android:src="@mipmap/top_logo_bg"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="11sp"
+            android:textColor="#346da3"
+            android:text="CHOOSE YOUR COUNTRY FROM THE LIST"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#346da3"
+            android:layout_marginTop="5dp"
+            android:text="CHOOSE COUNTRY"/>
 
         <ListView
             android:id="@+id/countryList"
@@ -44,7 +52,14 @@
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="50dp" />
+                android:layout_height="50dp"
+                android:hint="Search"
+                android:drawableLeft="@mipmap/search"
+                android:paddingLeft="15dp"
+                android:drawablePadding="10dp"
+                android:background="@color/transparent"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"/>
         </LinearLayout>
     </LinearLayout>
 

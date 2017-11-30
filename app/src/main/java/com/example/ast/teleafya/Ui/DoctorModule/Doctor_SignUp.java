@@ -8,8 +8,11 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 
 import com.example.ast.teleafya.R;
+import com.example.ast.teleafya.Ui.Custom_Views.Activity_CountryPicker;
 import com.example.ast.teleafya.Ui.Custom_Views.Activity_DatePicker;
 
 /**
@@ -17,7 +20,11 @@ import com.example.ast.teleafya.Ui.Custom_Views.Activity_DatePicker;
  */
 
 public class Doctor_SignUp extends  android.support.v4.app.Fragment {
-    EditText date_of_bith;
+    EditText date_of_bith , country;
+
+    ImageView imageView;
+
+    RelativeLayout relativeLayout;
 
 
     @Override
@@ -40,6 +47,9 @@ public class Doctor_SignUp extends  android.support.v4.app.Fragment {
 
     public void findView(View view)
     {
+
+        relativeLayout = (RelativeLayout)view.findViewById(R.id.Reltive1);
+
         date_of_bith=(EditText)view.findViewById(R.id.date_of_bith);
 
         date_of_bith.setOnClickListener(new View.OnClickListener() {
@@ -49,6 +59,39 @@ public class Doctor_SignUp extends  android.support.v4.app.Fragment {
                 startActivity(intent);
             }
         });
+
+        country = (EditText)view.findViewById(R.id.country);
+
+        country.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getActivity(), Activity_CountryPicker.class);
+                startActivity(intent);
+
+            }
+        });
+
+        imageView = (ImageView)view.findViewById(R.id.add_method);
+
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                getActivity().getSupportFragmentManager().beginTransaction().replace(android.R.id.content , new Doctor_Addnew_Method()).commit();
+
+                if (relativeLayout.getVisibility() == View.GONE){
+
+                    relativeLayout.setVisibility(View.VISIBLE);
+
+                }else {
+
+                    relativeLayout.setVisibility(View.VISIBLE);
+                }
+
+            }
+        });
+
+
 
     }
 }

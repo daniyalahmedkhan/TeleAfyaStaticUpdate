@@ -9,6 +9,7 @@ import android.os.Bundle;
 import com.example.ast.teleafya.R;
 import com.example.ast.teleafya.Ui.Adapters.Patient_LoginPager;
 import com.example.ast.teleafya.Ui.DoctorModule.Doctor_SignUp;
+import com.example.ast.teleafya.Ui.DoctorModule.doctor_signin;
 import com.example.ast.teleafya.Ui.Patient_Ui.Patient_SignIn;
 import com.example.ast.teleafya.Ui.Patient_Ui.Patient_SignUp;
 
@@ -18,7 +19,7 @@ public class Doctor_Activity extends AppCompatActivity {
 
     public ViewPager viewPager;
     public TabLayout tabLayout;
-    public Patient_SignIn patient_signIn;
+    public doctor_signin doctorSignin;
     public Doctor_SignUp doctor_signUp;
     public ArrayList<Fragment> fragments;
     public Patient_LoginPager patientLoginPager;
@@ -30,11 +31,11 @@ public class Doctor_Activity extends AppCompatActivity {
 
         viewPager = (ViewPager) findViewById(R.id.view_pager);
         tabLayout = (TabLayout) findViewById(R.id.tab_layout);
-        patient_signIn = new Patient_SignIn();
+        doctorSignin = new doctor_signin();
         doctor_signUp = new Doctor_SignUp();
 
         fragments = new ArrayList<>();
-        fragments.add(patient_signIn);
+        fragments.add(doctorSignin);
         fragments.add(doctor_signUp);
 
 

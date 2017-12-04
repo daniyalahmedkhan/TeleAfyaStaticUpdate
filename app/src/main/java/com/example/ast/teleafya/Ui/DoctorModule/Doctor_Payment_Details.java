@@ -1,6 +1,5 @@
 package com.example.ast.teleafya.Ui.DoctorModule;
 
-import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -12,13 +11,13 @@ import android.widget.ImageView;
 import com.example.ast.teleafya.R;
 
 /**
- * Created by Kashif on 11/30/2017.
+ * Created by Kashif on 12/4/2017.
  */
 
-public class Doctor_MSG_Chat extends android.support.v4.app.Fragment {
+public class Doctor_Payment_Details extends android.support.v4.app.Fragment {
+
 
     ImageView imageView;
-
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +27,8 @@ public class Doctor_MSG_Chat extends android.support.v4.app.Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.doctor_message_chat_screen , null);
+        View view = inflater.inflate(R.layout.doctor_payment_detail , null);
+
 
         imageView = (ImageView)view.findViewById(R.id.back_press_app);
 
@@ -36,10 +36,12 @@ public class Doctor_MSG_Chat extends android.support.v4.app.Fragment {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(getActivity() , DoctorMessage.class);
-                startActivity(intent);
+                getActivity().getSupportFragmentManager().beginTransaction().replace(android.R.id.content , new Doctor_My_Payments()).commit();
+
+
             }
         });
+
         return view;
     }
 }

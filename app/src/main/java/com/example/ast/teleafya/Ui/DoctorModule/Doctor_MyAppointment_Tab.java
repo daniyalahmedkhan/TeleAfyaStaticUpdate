@@ -1,5 +1,6 @@
 package com.example.ast.teleafya.Ui.DoctorModule;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
@@ -8,6 +9,7 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.example.ast.teleafya.R;
 import com.example.ast.teleafya.Ui.Adapters.Patient_LoginPager;
@@ -33,6 +35,7 @@ public class Doctor_MyAppointment_Tab extends android.support.v4.app.Fragment {
     public My_Appointment_TabPast myAppointmentTabPast;
     public ArrayList<Fragment> fragments;
     public Patient_LoginPager patientLoginPager;
+    ImageView backHome;
 
 
     @Override
@@ -47,6 +50,18 @@ public class Doctor_MyAppointment_Tab extends android.support.v4.app.Fragment {
         View view = inflater.inflate(R.layout.doctor_myappointment_tab , null);
 
         initView(view);
+
+        backHome = (ImageView)view.findViewById(R.id.back_home);
+
+        backHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+                Intent intent = new Intent(getActivity() , Doctor_HomeActivity.class);
+                startActivity(intent);
+            }
+        });
         return view;
 
     }

@@ -23,7 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@mipmap/profile_bg"
-                android:paddingBottom="50dp">
+                android:paddingBottom="15dp">
 
 
                 <RelativeLayout
@@ -39,7 +39,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@mipmap/back"
-                        android:padding="10dp"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
                         />
@@ -62,7 +61,7 @@
                         android:layout_marginTop="20dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@mipmap/shivank_sharma"
+                        android:background="@mipmap/dr_vijay_sharma"
                         android:layout_centerHorizontal="true"
                         android:id="@+id/center_image"
                         />
@@ -73,7 +72,7 @@
                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                         android:id="@+id/center_text1"
                         android:layout_centerHorizontal="true"
-                        android:text="Shivank Sharma"
+                        android:text="Dr. John"
                         android:textColor="@color/colorWhite"
                         android:layout_below="@id/center_image"
 
@@ -85,7 +84,7 @@
                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
                         android:layout_centerHorizontal="true"
                         android:id="@+id/center_text2"
-                        android:text="Age: 50 Weight: 70kg Height: 5.10 BMI 18.5"
+                        android:text="Mumbai Hiranandani health center"
                         android:textColor="@color/colorWhite"
                         android:layout_below="@id/center_text1"
 
@@ -97,65 +96,36 @@
                         android:layout_centerHorizontal="true"
 
                         android:layout_below="@id/center_text2"
-                        android:layout_marginTop="20dp">
+                        android:layout_marginTop="10dp">
 
 
                         <LinearLayout
                             android:layout_width="wrap_content"
-                            android:layout_height="12dp"
+                            android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
 
-                            <ImageView
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:drawableLeft="@mipmap/profile_clock"
+                              android:text="10 am to 8 pm"
+                              android:layout_marginRight="10dp"
+                              android:drawablePadding="5dp"
+                              android:textColor="@color/colorWhite"
+
+                              />
+
+                            <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginRight="20dp"
-                                android:src="@mipmap/call_white"
+                                android:drawableLeft="@mipmap/question"
+                                android:text="Active"
+                                android:layout_marginLeft="10dp"
+                                android:drawablePadding="5dp"
+                                android:textColor="@color/colorWhite"
+
                                 />
-
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_marginRight="20dp"
-                                android:layout_height="wrap_content"
-                                android:background="@color/colorGrey"
-                                />
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="20dp"
-
-                                android:src="@mipmap/video_call"
-                                />
-
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_marginRight="20dp"
-                                android:layout_height="wrap_content"
-                                android:background="@color/colorGrey"
-                                />
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="20dp"
-
-                                android:src="@mipmap/chat"
-                                />
-
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_marginRight="20dp"
-                                android:layout_height="wrap_content"
-                                android:background="@color/colorGrey"
-                                />
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@mipmap/mail"
-                                />
-
 
 
 

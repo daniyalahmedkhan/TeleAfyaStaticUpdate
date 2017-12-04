@@ -1,7 +1,6 @@
 package com.example.ast.teleafya.Ui.DoctorModule;
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -15,7 +14,7 @@ import com.example.ast.teleafya.R;
  * Created by Kashif on 11/30/2017.
  */
 
-public class Doctor_MSG_Chat extends android.support.v4.app.Fragment {
+public class Doctor_Home_Notification extends android.support.v4.app.Fragment {
 
     ImageView imageView;
 
@@ -28,18 +27,18 @@ public class Doctor_MSG_Chat extends android.support.v4.app.Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.doctor_message_chat_screen , null);
+        View view = inflater.inflate(R.layout.doctor_empty_notification , null);
 
-        imageView = (ImageView)view.findViewById(R.id.back_press_app);
+        imageView = (ImageView)view.findViewById(R.id.back);
 
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(getActivity() , DoctorMessage.class);
+                Intent intent = new Intent(getActivity() , Doctor_HomeActivity.class);
                 startActivity(intent);
             }
         });
-        return view;
+        return null;
     }
 }

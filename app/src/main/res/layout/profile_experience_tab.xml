@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:orientation="vertical"
+    android:background="#fff"
     android:layout_height="match_parent">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -441,4 +445,158 @@
             android:layout_height="40dp" />
     </LinearLayout>
 
-</ScrollView>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/menu_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#fff"
+        android:paddingTop="15dp"
+        android:weightSum="5">
+
+
+        <LinearLayout
+            android:id="@+id/home_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+
+            <ImageView
+                android:id="@+id/home_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/home" />
+
+            <TextView
+                android:id="@+id/home_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="HOME"
+                android:textColor="#346da3"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/patient_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/provider_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/patients" />
+
+            <TextView
+                android:id="@+id/top_text"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="PATIENTS"
+                android:textSize="10sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/appointment_view"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/notification_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/appoitments" />
+
+            <TextView
+                android:id="@+id/notification_text"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="APPOINTMENTS"
+                android:textSize="10sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/create_test_view"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/messages_unselect" />
+
+            <TextView
+                android:id="@+id/profile_text"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="MESSAGE"
+                android:textSize="10sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/profile_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/setting_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/select_profile" />
+
+            <TextView
+                android:id="@+id/setting_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="PROFILE"
+                android:textSize="10sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

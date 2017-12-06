@@ -11,8 +11,8 @@ import android.widget.LinearLayout;
 
 import com.example.ast.teleafya.R;
 import com.example.ast.teleafya.Ui.Diagnostic_Ui.Diagnostic_HomeActivity;
-import com.example.ast.teleafya.Ui.Patient_Ui.Patient_HomeActivity;
-import com.example.ast.teleafya.Ui.Patient_Ui.Patient_ProviderActivity;
+import com.example.ast.teleafya.Ui.Partners.Ambulance.Ambulance.Ambulance_LoginActivity;
+import com.example.ast.teleafya.Ui.Partners.Ambulance.Ambulance.Partners_AmbulanceHome;
 import com.example.ast.teleafya.Ui.Pharmacy_Ui.Pharmacy_HomeActivity;
 import com.readystatesoftware.systembartint.SystemBarTintManager;
 
@@ -24,7 +24,7 @@ public class User_Selection_Screen extends AppCompatActivity {
     public LinearLayout diagnostic_container;
     public LinearLayout home_aid_midwive;
     public LinearLayout dentist_container;
-
+    public LinearLayout partner_flow;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +53,7 @@ public class User_Selection_Screen extends AppCompatActivity {
         diagnostic_container = (LinearLayout) findViewById(R.id.diagnostic_container);
         dentist_container = (LinearLayout) findViewById(R.id.dentist_container);
         home_aid_midwive = (LinearLayout) findViewById(R.id.home_aid_midwive);
+        partner_flow = (LinearLayout) findViewById(R.id.partner_flow);
 
         doctor_container.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,6 +84,16 @@ public class User_Selection_Screen extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent  =new Intent(User_Selection_Screen.this,Diagnostic_HomeActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        partner_flow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent  =new Intent(User_Selection_Screen.this, Ambulance_LoginActivity.class);
+                startActivity(intent);
+
+
             }
         });
 

@@ -1,9 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_outside"
+        android:background="@mipmap/profile_bg"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:text="My Patient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/back_home"
+            android:padding="10dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="15dp"
+            android:background="@mipmap/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
 
     <ScrollView
         android:layout_width="match_parent"
@@ -13,28 +40,40 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#fefefe"
                 android:id="@+id/Linear1"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
-                android:background="#fefefe"
                 android:padding="10dp">
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:src="@mipmap/vaccinations"
-                    />
+                <LinearLayout
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/dr_img"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginLeft="10dp"
                     android:layout_marginTop="5dp"
                     android:orientation="vertical">
 
@@ -49,10 +88,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="5dp"
                             android:layout_weight="0.9"
-                            android:text="Diphtheria and Tetnus (DT)"
+                            android:text="Dr. Manohar Sharma"
                             android:textColor="#346da3"
                             android:textStyle="bold" />
-
 
 
                     </LinearLayout>
@@ -60,6 +98,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
                         android:orientation="horizontal"
                         android:padding="5dp"
                         android:weightSum="2">
@@ -78,9 +117,9 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="2dp"
-                                    android:drawableLeft="@mipmap/everyday"
+                                    android:drawableLeft="@mipmap/monthly"
                                     android:drawablePadding="5dp"
-                                    android:text="28th july 2017"
+                                    android:text="Blood Cancer"
                                     android:textSize="8sp" />
 
                             </LinearLayout>
@@ -95,9 +134,9 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="2dp"
-                                    android:drawableLeft="@mipmap/dr_john_sun"
+                                    android:drawableLeft="@mipmap/location"
                                     android:drawablePadding="5dp"
-                                    android:text="Dr. John Sun"
+                                    android:text="Mumbai , India"
                                     android:textSize="8sp" />
 
                             </LinearLayout>
@@ -109,7 +148,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:layout_marginLeft="-10dp"
                             android:orientation="vertical">
 
                             <LinearLayout
@@ -137,9 +175,9 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="2dp"
-                                    android:drawableLeft="@mipmap/location"
+                                    android:drawableLeft="@mipmap/calendar2"
                                     android:drawablePadding="5dp"
-                                    android:text="Powai, Mumbai"
+                                    android:text="28th July 2017 10:30AM"
                                     android:textSize="8sp" />
 
                             </LinearLayout>
@@ -147,17 +185,161 @@
 
                         </LinearLayout>
 
-                        <Button
-                            android:layout_width="45dp"
-                            android:layout_height="23dp"
-                            android:layout_gravity="left"
-                            android:background="@drawable/button_edges_dblue"
-                            android:focusable="false"
-                            android:text="2yrs old"
-                            android:textAllCaps="false"
-                            android:textColor="#fff"
-                            android:textSize="10sp"
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#fefefe"
+                android:id="@+id/Linear2"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/dr_img"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="0.9"
+                            android:text="Dr. Manohar Sharma"
+                            android:textColor="#346da3"
                             android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:drawableLeft="@mipmap/monthly"
+                                    android:drawablePadding="5dp"
+                                    android:text="Blood Cancer"
+                                    android:textSize="8sp" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:drawableLeft="@mipmap/location"
+                                    android:drawablePadding="5dp"
+                                    android:text="Mumbai , India"
+                                    android:textSize="8sp" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:drawableLeft="@mipmap/p_hospital"
+                                    android:drawablePadding="5dp"
+                                    android:text="Hiranandani Hospital"
+                                    android:textSize="8sp" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:drawableLeft="@mipmap/calendar2"
+                                    android:drawablePadding="5dp"
+                                    android:text="28th July 2017 10:30AM"
+                                    android:textSize="8sp" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
 
 
                     </LinearLayout>
@@ -175,20 +357,34 @@
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"
                 android:background="#fefefe"
+                android:id="@+id/Linear4"
                 android:padding="10dp">
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:src="@mipmap/vaccinations"
-                    />
+                <LinearLayout
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/dr_img"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginLeft="10dp"
                     android:layout_marginTop="5dp"
                     android:orientation="vertical">
 
@@ -203,10 +399,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="5dp"
                             android:layout_weight="0.9"
-                            android:text="Hepatitis B (Engerix)"
+                            android:text="Dr. Manohar Sharma"
                             android:textColor="#346da3"
                             android:textStyle="bold" />
-
 
 
                     </LinearLayout>
@@ -214,6 +409,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
                         android:orientation="horizontal"
                         android:padding="5dp"
                         android:weightSum="2">
@@ -232,9 +428,9 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="2dp"
-                                    android:drawableLeft="@mipmap/everyday"
+                                    android:drawableLeft="@mipmap/monthly"
                                     android:drawablePadding="5dp"
-                                    android:text="28th july 2017"
+                                    android:text="Blood Cancer"
                                     android:textSize="8sp" />
 
                             </LinearLayout>
@@ -249,9 +445,9 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="2dp"
-                                    android:drawableLeft="@mipmap/dr_john_sun"
+                                    android:drawableLeft="@mipmap/location"
                                     android:drawablePadding="5dp"
-                                    android:text="Dr. John Sun"
+                                    android:text="Mumbai , India"
                                     android:textSize="8sp" />
 
                             </LinearLayout>
@@ -263,7 +459,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:layout_marginLeft="-10dp"
                             android:orientation="vertical">
 
                             <LinearLayout
@@ -291,9 +486,9 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="2dp"
-                                    android:drawableLeft="@mipmap/location"
+                                    android:drawableLeft="@mipmap/calendar2"
                                     android:drawablePadding="5dp"
-                                    android:text="Powai, Mumbai"
+                                    android:text="28th July 2017 10:30AM"
                                     android:textSize="8sp" />
 
                             </LinearLayout>
@@ -301,17 +496,6 @@
 
                         </LinearLayout>
 
-                        <Button
-                            android:layout_width="45dp"
-                            android:layout_height="23dp"
-                            android:layout_gravity="left"
-                            android:background="@drawable/button_edges_dblue"
-                            android:focusable="false"
-                            android:text="2yrs old"
-                            android:textAllCaps="false"
-                            android:textColor="#fff"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
 
 
                     </LinearLayout>
@@ -329,20 +513,34 @@
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"
                 android:background="#fefefe"
+                android:id="@+id/Linea5"
                 android:padding="10dp">
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:src="@mipmap/vaccinations"
-                    />
+                <LinearLayout
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/dr_img"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginLeft="10dp"
                     android:layout_marginTop="5dp"
                     android:orientation="vertical">
 
@@ -357,10 +555,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="5dp"
                             android:layout_weight="0.9"
-                            android:text="Hepatitis B (Engerix) and HIB"
+                            android:text="Dr. Manohar Sharma"
                             android:textColor="#346da3"
                             android:textStyle="bold" />
-
 
 
                     </LinearLayout>
@@ -368,6 +565,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
                         android:orientation="horizontal"
                         android:padding="5dp"
                         android:weightSum="2">
@@ -386,9 +584,9 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="2dp"
-                                    android:drawableLeft="@mipmap/everyday"
+                                    android:drawableLeft="@mipmap/monthly"
                                     android:drawablePadding="5dp"
-                                    android:text="28th july 2017"
+                                    android:text="Blood Cancer"
                                     android:textSize="8sp" />
 
                             </LinearLayout>
@@ -403,9 +601,9 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="2dp"
-                                    android:drawableLeft="@mipmap/dr_john_sun"
+                                    android:drawableLeft="@mipmap/location"
                                     android:drawablePadding="5dp"
-                                    android:text="Dr. John Sun"
+                                    android:text="Mumbai , India"
                                     android:textSize="8sp" />
 
                             </LinearLayout>
@@ -417,7 +615,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:layout_marginLeft="-10dp"
                             android:orientation="vertical">
 
                             <LinearLayout
@@ -445,9 +642,9 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="2dp"
-                                    android:drawableLeft="@mipmap/location"
+                                    android:drawableLeft="@mipmap/calendar2"
                                     android:drawablePadding="5dp"
-                                    android:text="Powai, Mumbai"
+                                    android:text="28th July 2017 10:30AM"
                                     android:textSize="8sp" />
 
                             </LinearLayout>
@@ -455,17 +652,6 @@
 
                         </LinearLayout>
 
-                        <Button
-                            android:layout_width="45dp"
-                            android:layout_height="23dp"
-                            android:layout_gravity="left"
-                            android:background="@drawable/button_edges_dblue"
-                            android:focusable="false"
-                            android:text="2yrs old"
-                            android:textAllCaps="false"
-                            android:textColor="#fff"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
 
 
                     </LinearLayout>
@@ -475,28 +661,40 @@
 
 
             </LinearLayout>
-
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"
                 android:background="#fefefe"
+                android:id="@+id/Linear6"
                 android:padding="10dp">
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:src="@mipmap/vaccinations"
-                    />
+                <LinearLayout
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/dr_img"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginLeft="10dp"
                     android:layout_marginTop="5dp"
                     android:orientation="vertical">
 
@@ -511,10 +709,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="5dp"
                             android:layout_weight="0.9"
-                            android:text="Measles, Mumps, Rubella (MMR)"
+                            android:text="Dr. Manohar Sharma"
                             android:textColor="#346da3"
                             android:textStyle="bold" />
-
 
 
                     </LinearLayout>
@@ -522,6 +719,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
                         android:orientation="horizontal"
                         android:padding="5dp"
                         android:weightSum="2">
@@ -540,9 +738,9 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="2dp"
-                                    android:drawableLeft="@mipmap/everyday"
+                                    android:drawableLeft="@mipmap/monthly"
                                     android:drawablePadding="5dp"
-                                    android:text="28th july 2017"
+                                    android:text="Blood Cancer"
                                     android:textSize="8sp" />
 
                             </LinearLayout>
@@ -557,9 +755,9 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="2dp"
-                                    android:drawableLeft="@mipmap/dr_john_sun"
+                                    android:drawableLeft="@mipmap/location"
                                     android:drawablePadding="5dp"
-                                    android:text="Dr. John Sun"
+                                    android:text="Mumbai , India"
                                     android:textSize="8sp" />
 
                             </LinearLayout>
@@ -571,7 +769,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:layout_marginLeft="-10dp"
                             android:orientation="vertical">
 
                             <LinearLayout
@@ -599,9 +796,9 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="2dp"
-                                    android:drawableLeft="@mipmap/location"
+                                    android:drawableLeft="@mipmap/calendar2"
                                     android:drawablePadding="5dp"
-                                    android:text="Powai, Mumbai"
+                                    android:text="28th July 2017 10:30AM"
                                     android:textSize="8sp" />
 
                             </LinearLayout>
@@ -609,17 +806,6 @@
 
                         </LinearLayout>
 
-                        <Button
-                            android:layout_width="45dp"
-                            android:layout_height="23dp"
-                            android:layout_gravity="left"
-                            android:background="@drawable/button_edges_dblue"
-                            android:focusable="false"
-                            android:text="2yrs old"
-                            android:textAllCaps="false"
-                            android:textColor="#fff"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
 
 
                     </LinearLayout>
@@ -629,14 +815,165 @@
 
 
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#fefefe"
+                android:id="@+id/Linear7"
+                android:padding="10dp">
 
+                <LinearLayout
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/dr_img"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="0.9"
+                            android:text="Dr. Manohar Sharma"
+                            android:textColor="#346da3"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:drawableLeft="@mipmap/monthly"
+                                    android:drawablePadding="5dp"
+                                    android:text="Blood Cancer"
+                                    android:textSize="8sp" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:drawableLeft="@mipmap/location"
+                                    android:drawablePadding="5dp"
+                                    android:text="Mumbai , India"
+                                    android:textSize="8sp" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:drawableLeft="@mipmap/p_hospital"
+                                    android:drawablePadding="5dp"
+                                    android:text="Hiranandani Hospital"
+                                    android:textSize="8sp" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:drawableLeft="@mipmap/calendar2"
+                                    android:drawablePadding="5dp"
+                                    android:text="28th July 2017 10:30AM"
+                                    android:textSize="8sp" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
 
 
         </LinearLayout>
 
     </ScrollView>
-
-
 
 
 </LinearLayout>

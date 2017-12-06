@@ -1,5 +1,6 @@
 package com.example.ast.teleafya.Ui.Patient_Ui;
 
+import android.content.Intent;
 import android.os.Build;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -11,6 +12,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.example.ast.teleafya.R;
@@ -29,6 +31,7 @@ public class Patient_PaymentActivity extends AppCompatActivity {
     public Patient_LoginPager patientLoginPager;
     public Pateint_Last_Transaction last_transaction;
     public Patient_Save_Cards patient_save_cards;
+    ImageView back_home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +54,7 @@ public class Patient_PaymentActivity extends AppCompatActivity {
         setContentView(R.layout.activity_patient__payment);
         tabLayout = (TabLayout)findViewById(R.id.tab_layout);
         viewPager = (ViewPager)findViewById(R.id.view_pager);
+        back_home = (ImageView) findViewById(R.id.back_home);
         last_transaction = new Pateint_Last_Transaction();
         patient_save_cards = new Patient_Save_Cards();
         fragments = new ArrayList<>();
@@ -87,6 +91,14 @@ public class Patient_PaymentActivity extends AppCompatActivity {
         });
 
 
+        back_home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(Patient_PaymentActivity.this , Patient_HomeActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }

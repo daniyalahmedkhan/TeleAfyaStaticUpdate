@@ -15,6 +15,7 @@
 
             <ImageView
                 android:id="@+id/back_image"
+                android:padding="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
@@ -380,7 +381,7 @@
                     android:id="@+id/notification_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@mipmap/appoitments" />
+                    android:src="@mipmap/my_appointments" />
 
                 <TextView
                     android:id="@+id/notification_text"

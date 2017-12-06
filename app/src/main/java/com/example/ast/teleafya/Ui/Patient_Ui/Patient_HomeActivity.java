@@ -1,7 +1,10 @@
 package com.example.ast.teleafya.Ui.Patient_Ui;
 
+import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Build;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -17,6 +20,7 @@ import android.widget.RelativeLayout;
 import com.example.ast.teleafya.R;
 import com.example.ast.teleafya.Ui.Adapters.Navigations_ItemsAdapter;
 import com.example.ast.teleafya.Ui.Adapters.Timelinelist_Adapter;
+import com.example.ast.teleafya.Ui.DoctorModule.Doctor_MyAppointment_Tab;
 import com.readystatesoftware.systembartint.SystemBarTintManager;
 
 import java.util.ArrayList;
@@ -145,10 +149,17 @@ public class Patient_HomeActivity extends AppCompatActivity {
                     //   finish();
                 }else if(i==2)
                 {
-                    Intent intent  =new Intent(Patient_HomeActivity.this,Patient_ProviderActivity.class);
+//                    Intent intent  = new Intent(Patient_HomeActivity.this,Patient_ProviderActivity.class);
+//
+//                    intent.putExtra("doc","yes");
+//                    startActivity(intent);
 
-                    intent.putExtra("doc","yes");
-                    startActivity(intent);
+                    android.app.FragmentManager fragmentManager = getFragmentManager();
+                    FragmentTransaction fragmentTransaction = fragmentManager
+                            .beginTransaction();
+                    patient_doctor_list fragmentS1 = new patient_doctor_list();
+                    getSupportFragmentManager().beginTransaction().add(android.R.id.content, fragmentS1).commit();
+
                 }
                 else if (i == 6) {
                     Intent intent = new Intent(Patient_HomeActivity.this, Patient_ReminderActivity.class);

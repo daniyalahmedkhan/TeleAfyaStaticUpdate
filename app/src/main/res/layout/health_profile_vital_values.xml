@@ -24,6 +24,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
                 android:weightSum="2"
                 >
 
@@ -95,7 +98,7 @@
                                 android:layout_height="wrap_content"
                                 android:textColor="@color/colorText"
                                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                                android:text="130"
+                                android:text="90"
                                 android:textStyle="bold"
 
                                 />
@@ -103,7 +106,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:hint="mg"
+                                android:hint="%"
                                 android:layout_marginTop="5dp"
                                 android:layout_marginLeft="5dp"
                                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
@@ -211,6 +214,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
                 android:weightSum="2"
                 >
 
@@ -281,7 +287,7 @@
                                 android:layout_height="wrap_content"
                                 android:textColor="@color/colorText"
                                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                                android:text="150"
+                                android:text="71"
                                 android:textStyle="bold"
 
                                 />
@@ -399,16 +405,26 @@
         </LinearLayout>
 
 
+
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardElevation="4dp"
+            card_view:cardCornerRadius="3dp">
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="20dp"
             android:clickable="true"
             android:background="@color/colorWhite"
-            android:paddingTop="20dp"
+
             android:id="@+id/Relative2"
             android:layout_below="@id/Linear1"
             android:layout_marginTop="20dp">
+
 
 
             <ImageView
@@ -435,6 +451,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="20dp"
                 android:src="@mipmap/arrow"
                 />
@@ -443,6 +460,8 @@
 
 
         </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
 
 
         <RelativeLayout
@@ -730,16 +749,26 @@
 
 
 
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardElevation="4dp"
+            card_view:cardCornerRadius="3dp">
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="20dp"
             android:clickable="true"
             android:background="@color/colorWhite"
-            android:paddingTop="20dp"
             android:id="@+id/Relative3"
             android:layout_below="@id/Linear1"
             android:layout_marginTop="20dp">
+
+
 
 
             <ImageView
@@ -767,6 +796,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
                 android:src="@mipmap/arrow"
                 />
 
@@ -775,6 +805,7 @@
 
         </RelativeLayout>
 
+        </android.support.v7.widget.CardView>
 
         <RelativeLayout
             android:layout_width="match_parent"

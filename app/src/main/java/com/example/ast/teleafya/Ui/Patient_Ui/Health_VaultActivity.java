@@ -19,7 +19,7 @@ public class Health_VaultActivity extends AppCompatActivity {
 
     public LinearLayout home_view,appointment_view,timeline_view,message_view,provider_container;
     public ImageView back_image;
-    LinearLayout   L1 , L2 , L3;
+    LinearLayout   L1 , L2 , L3, L4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +45,7 @@ public class Health_VaultActivity extends AppCompatActivity {
         L1 = (LinearLayout) findViewById(R.id.Linear1);
         L2 = (LinearLayout) findViewById(R.id.Document);
         L3 = (LinearLayout) findViewById(R.id.test_order_provider);
+        L4 = (LinearLayout) findViewById(R.id.family_provider);
         home_view = (LinearLayout) findViewById(R.id.home_view);
         provider_container = (LinearLayout) findViewById(R.id.provider_container);
         appointment_view = (LinearLayout) findViewById(R.id.appointment_view);
@@ -85,6 +86,21 @@ public class Health_VaultActivity extends AppCompatActivity {
                         .beginTransaction();
                 health_profile_med_tab fragmentS1 = new health_profile_med_tab();
                 getSupportFragmentManager().beginTransaction().add(R.id.activity_health, fragmentS1).commit();
+
+
+            }
+        });
+
+        L4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                FragmentManager fragmentManager = getFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager
+                        .beginTransaction();
+                Health_Vaccince_Tab fragmentS1 = new Health_Vaccince_Tab();
+                getSupportFragmentManager().beginTransaction().add(R.id.activity_health, fragmentS1).commit();
+
 
 
             }

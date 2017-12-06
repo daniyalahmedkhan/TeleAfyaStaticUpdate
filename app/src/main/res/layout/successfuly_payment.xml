@@ -22,6 +22,7 @@
             android:id="@+id/back_home"
             android:layout_marginTop="45dp"
             android:layout_marginLeft="15dp"
+            android:padding="10dp"
             android:background="@mipmap/back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -72,8 +73,9 @@
             android:weightSum="4"
             android:layout_marginTop="10dp"
             android:orientation="vertical"
+            android:paddingBottom="120dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
             <LinearLayout
                 android:weightSum="2"

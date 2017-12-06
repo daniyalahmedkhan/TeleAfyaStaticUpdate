@@ -9,16 +9,15 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.example.ast.teleafya.R;
-import com.example.ast.teleafya.Ui.Adapters.Patient_LastTransaction_ListAdapter;
 
 /**
- * Created by AST on 10/30/2017.
+ * Created by Kashif on 12/5/2017.
  */
 
-public class Successfuly_Payment_Patient extends android.support.v4.app.Fragment {
-
+public class Health_Profile_Vaccine_Details extends android.support.v4.app.Fragment {
 
     ImageView imageView;
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,20 +27,21 @@ public class Successfuly_Payment_Patient extends android.support.v4.app.Fragment
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.successfuly_payment,null);
+        View view = inflater.inflate(R.layout.health_profile_vaccine_details , null);
 
-            imageView = (ImageView)view.findViewById(R.id.back_home);
+        imageView =(ImageView)view.findViewById(R.id.back_home);
 
-            imageView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
-                    Intent intent = new Intent(getActivity() , Patient_PaymentActivity.class);
-                    startActivity(intent);
+            Intent intent = new Intent(getActivity() , Health_VaultActivity.class);
+            startActivity(intent);
 
-                }
-            });
+            }
+        });
 
         return view;
+
     }
 }

@@ -144,7 +144,7 @@ public class Patient_Appointment_Activity extends AppCompatActivity {
         back_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Patient_Appointment_Activity.this, Patient_Activity.class);
+                Intent intent = new Intent(Patient_Appointment_Activity.this, Patient_HomeActivity.class);
                 startActivity(intent);
                 finish();
             }

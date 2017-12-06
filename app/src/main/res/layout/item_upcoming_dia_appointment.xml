@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="match_parent"
+    android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <LinearLayout
@@ -16,7 +16,7 @@
             android:layout_height="70dp"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:background="@drawable/button_edges_lgreen"
+            android:background="@drawable/button_edges_seagreen"
             android:gravity="center"
             android:orientation="vertical">
 
@@ -75,7 +75,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_weight="0.9"
-                    android:text="Lipid Profile"
+                    android:text="Dr. Vijay Sharma "
                     android:textColor="#346da3"
                     android:textStyle="bold" />
 
@@ -104,9 +104,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
-                            android:drawableLeft="@mipmap/john_sun"
+                            android:drawableLeft="@mipmap/monthly"
                             android:drawablePadding="5dp"
-                            android:text="Dr. Vijay Sharma"
+                            android:text="Monthly Checkup"
                             android:textSize="8sp" />
 
                     </LinearLayout>
@@ -121,9 +121,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
-                            android:drawableLeft="@mipmap/calendar"
+                            android:drawableLeft="@mipmap/app_time"
                             android:drawablePadding="5dp"
-                            android:text="28 July,2017"
+                            android:text="10:30 pm"
                             android:textSize="8sp" />
 
                     </LinearLayout>
@@ -145,9 +145,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
-                            android:drawableLeft="@mipmap/app_time"
+                            android:drawableLeft="@mipmap/p_hospital"
                             android:drawablePadding="5dp"
-                            android:text="10:30 pm to 11:30pm"
+                            android:text="Hiranandani Hospital"
                             android:textSize="8sp" />
 
                     </LinearLayout>
@@ -162,9 +162,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
-                            android:drawableLeft="@mipmap/pin_apt"
+                            android:drawableLeft="@mipmap/app_home_visit"
                             android:drawablePadding="5dp"
-                            android:text="Mumbai, India"
+                            android:text="Home  Visit"
                             android:textSize="8sp" />
 
                     </LinearLayout>
@@ -180,4 +180,6 @@
 
 
     </LinearLayout>
+
+
 </LinearLayout>

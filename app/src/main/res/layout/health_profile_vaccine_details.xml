@@ -2,6 +2,7 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:orientation="vertical"
+    android:background="#fff"
     android:layout_height="match_parent">
 
 
@@ -23,6 +24,7 @@
 
         <ImageView
             android:id="@+id/back_home"
+            android:padding="10dp"
             android:layout_marginTop="45dp"
             android:layout_marginLeft="15dp"
             android:background="@mipmap/back"
@@ -407,6 +409,7 @@
                     android:layout_marginLeft="20dp"
                     android:orientation="horizontal"
                     android:id="@+id/Linear7"
+                    android:paddingBottom="50dp"
                     android:layout_marginTop="-5dp">
 
 
@@ -495,44 +498,6 @@
 
         </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:layout_alignParentBottom="true"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:background="@color/colorWhite"
-                android:orientation="horizontal">
-
-
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@mipmap/gray_edit"
-                    android:layout_marginRight="13dp"
-                    />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@mipmap/gray_delete"
-                    android:layout_marginRight="13dp"
-                    />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@mipmap/gray_share"
-                    />
-            </LinearLayout>
-
-
-        </RelativeLayout>
 
 
 
@@ -542,7 +507,33 @@
     </ScrollView>
 
 
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom">
 
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#58a7f2"
+            android:text="Upload"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/colorWhite"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
 
 
 </LinearLayout>

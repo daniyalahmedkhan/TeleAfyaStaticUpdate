@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.example.ast.teleafya.R;
@@ -19,6 +20,8 @@ import java.util.ArrayList;
 
 public class Pateint_Last_Transaction extends android.support.v4.app.Fragment {
 
+
+    ImageView imageView;
     public ListView last_transaction;
     public ArrayList<String> arrayList;
     public Patient_LastTransaction_ListAdapter patient_lastTransaction_listAdapter;
@@ -57,6 +60,9 @@ public class Pateint_Last_Transaction extends android.support.v4.app.Fragment {
                         .beginTransaction()
                         .replace(R.id.payment_patient,new Successfuly_Payment_Patient())
                         .commit();
+
+
+
             }
         });
 

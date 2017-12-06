@@ -1,14 +1,13 @@
 package com.example.ast.teleafya.Ui.Patient_Ui;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 
 import com.example.ast.teleafya.R;
 import com.example.ast.teleafya.Ui.Adapters.Patient_LoginPager;
@@ -16,19 +15,17 @@ import com.example.ast.teleafya.Ui.Adapters.Patient_LoginPager;
 import java.util.ArrayList;
 
 /**
- * Created by Kashif on 11/27/2017.
+ * Created by Kashif on 12/5/2017.
  */
 
-public class health_profile_med_tab extends android.support.v4.app.Fragment {
+public class Health_Vaccince_Tab extends  android.support.v4.app.Fragment{
 
     public ViewPager viewPager;
     public TabLayout tabLayout;
-    ImageView imageView;
-    public ArrayList<android.support.v4.app.Fragment> arrayList;
+    public ArrayList<Fragment> arrayList;
+    public Health_Profile_Vaccine_History healthProfileVaccineHistory;
+    public Health_Profile_Upcoming healthProfileUpcoming;
     public Patient_LoginPager patientLoginPager;
-    public health_profile_medication healthProfileMedication;
-    public health_profile_medi_today healthProfileMediToday;
-
 
 
     @Override
@@ -40,44 +37,26 @@ public class health_profile_med_tab extends android.support.v4.app.Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.health_profile_tab,null);
+        View view = inflater.inflate(R.layout.health_vaccince_tab , null);
+
         initView(view);
 
-        imageView = (ImageView)view.findViewById(R.id.back_home);
-
-        imageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-
-                Intent intent = new Intent(getActivity() , Health_VaultActivity.class);
-                startActivity(intent);
-
-            }
-        });
-
-
         return view;
+
     }
 
     private void initView(View view) {
         viewPager = (ViewPager) view.findViewById(R.id.view_pager);
         tabLayout = (TabLayout) view.findViewById(R.id.tab_layout);
         arrayList = new ArrayList<>();
+        healthProfileVaccineHistory = new Health_Profile_Vaccine_History();
+        healthProfileUpcoming = new Health_Profile_Upcoming();
 
-        healthProfileMedication = new health_profile_medication();
-        healthProfileMediToday = new health_profile_medi_today();
+        arrayList.add(healthProfileVaccineHistory);
+        arrayList.add(healthProfileUpcoming);
 
-        // map_list = new Map_List();
-
-        arrayList.add(healthProfileMedication);
-        arrayList.add(healthProfileMediToday);
-
-        //   arrayList.add(map_list);
-
-        tabLayout.addTab(tabLayout.newTab().setText("ALL MEDICINE"));
-        tabLayout.addTab(tabLayout.newTab().setText("TODAY MEDICINE"));
-
+        tabLayout.addTab(tabLayout.newTab().setText("VACCINE HISTORY"));
+        tabLayout.addTab(tabLayout.newTab().setText("UPCOMING VACCINE"));
 
         patientLoginPager = new Patient_LoginPager(getActivity().getSupportFragmentManager(), arrayList);
         //is line se tablayout k neche jo shade araaha hai woh change hoga pageviewer k mutabik
@@ -105,4 +84,5 @@ public class health_profile_med_tab extends android.support.v4.app.Fragment {
 
 
     }
+
 }

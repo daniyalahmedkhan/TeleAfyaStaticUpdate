@@ -36,7 +36,7 @@ public class Book_Appointment extends Activity {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.book_appointment);
-        confirm_app = (Button)findViewById(R.id.confirm_app);
+        confirm_app = (Button) findViewById(R.id.confirm_app);
         View completeView = getLayoutInflater().inflate(R.layout.successfuly_apointment, null);
         filter_Regular_Service = new Dialog(this);
         filter_Regular_Service.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
@@ -49,69 +49,68 @@ public class Book_Appointment extends Activity {
             }
         });
 
-        small = (ImageView)findViewById(R.id.SmallRound);
-        large = (ImageView)findViewById(R.id.LargeRound);
+//        small = (ImageView)findViewById(R.id.SmallRound);
+//        large = (ImageView)findViewById(R.id.LargeRound);
 
 
         // small.setVisibility(View.GONE);
 //        large.setVisibility(View.GONE);
 
 
-
-        relativeLayout = (RelativeLayout)findViewById(R.id.Relative1);
-        relativeLayout2 = (RelativeLayout)findViewById(R.id.Relative2);
-
-
-        linearLayout = (LinearLayout)findViewById(R.id.Linear1);
-        linearLayout2 = (LinearLayout)findViewById(R.id.Linear2);
-
-        linearLayout.setVisibility(View.GONE);
-        linearLayout2.setVisibility(View.GONE);
-
-        relativeLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+//        relativeLayout = (RelativeLayout)findViewById(R.id.Relative1);
+//        relativeLayout2 = (RelativeLayout)findViewById(R.id.Relative2);
 
 
-//                Toast.makeText(getActivity(), "Hello World" , Toast.LENGTH_SHORT).show();
-                if(linearLayout.getVisibility() == View.VISIBLE) {
+//        linearLayout = (LinearLayout)findViewById(R.id.Linear1);
+//        linearLayout2 = (LinearLayout)findViewById(R.id.Linear2);
 
+//        linearLayout.setVisibility(View.GONE);
+//        linearLayout2.setVisibility(View.GONE);
 
-                    linearLayout.setVisibility(View.GONE);
-                    large.setVisibility(View.GONE);
-
-                }else {
-
-
-                    linearLayout.setVisibility(View.VISIBLE);
-                    large.setVisibility(View.VISIBLE);
-                }
-
-            }
-        });
-
-
-        relativeLayout2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (linearLayout2.getVisibility() == View.VISIBLE){
-
-
-                    linearLayout2.setVisibility(View.GONE);
-                    small.setVisibility(View.GONE);
-
-                }
-                else {
-
-                    linearLayout2.setVisibility(View.VISIBLE);
-                    small.setVisibility(View.VISIBLE);
-                }
-            }
-        });
-
+//        relativeLayout.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//
+////                Toast.makeText(getActivity(), "Hello World" , Toast.LENGTH_SHORT).show();
+//                if(linearLayout.getVisibility() == View.VISIBLE) {
+//
+//
+//                    linearLayout.setVisibility(View.GONE);
+//                    large.setVisibility(View.GONE);
+//
+//                }else {
+//
+//
+//                    linearLayout.setVisibility(View.VISIBLE);
+//                    large.setVisibility(View.VISIBLE);
+//                }
+//
+//            }
+//        });
+//
+//
+//        relativeLayout2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                if (linearLayout2.getVisibility() == View.VISIBLE){
+//
+//
+//                    linearLayout2.setVisibility(View.GONE);
+//                    small.setVisibility(View.GONE);
+//
+//                }
+//                else {
+//
+//                    linearLayout2.setVisibility(View.VISIBLE);
+//                    small.setVisibility(View.VISIBLE);
+//                }
+//            }
+//        });
+//
+//    }
+//
     }
-
-
   
 
 

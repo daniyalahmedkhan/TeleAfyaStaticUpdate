@@ -235,9 +235,38 @@
             android:name=".Ui.Partners.Ambulance.Ambulance.Partners_AmbulanceHome"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
-        <activity android:name=".Ui.Partners.Ambulance.Transport.Partners_TransportHome" />
-        <activity android:name=".Ui.Partners.Ambulance.Ambulance.Ambulance_LoginActivity" />
-        <activity android:name=".Ui.Partners.Ambulance.Ambulance.MessageTabScreen"></activity>
+        <activity
+            android:name=".Ui.Partners.Ambulance.Transport.Partners_TransportHome"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".Ui.Partners.Ambulance.Ambulance.Ambulance_LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".Ui.Partners.Ambulance.Ambulance.MessageTabScreen"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".Ui.Partners.Ambulance.Ambulance.Partners_Emergency_Activity_Tab"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".Ui.Partners.Ambulance.Ambulance.My_Ambulance_SectionActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".Ui.Partners.Ambulance.Ambulance.Partners_Ambulance_Request"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".Ui.Partners.Ambulance.Ambulance.partners_ambulance_past_requestActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".Ui.Partners.Ambulance.Ambulance.Profile_Info_Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            ></activity>
     </application>
 
 </manifest>

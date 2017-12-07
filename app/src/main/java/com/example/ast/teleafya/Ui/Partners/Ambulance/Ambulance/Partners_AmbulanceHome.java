@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
@@ -37,6 +38,7 @@ public class Partners_AmbulanceHome extends AppCompatActivity {
     public ListView mDrawerList;
     private ActionBarDrawerToggle mDrawerToggle;
     public RelativeLayout pharmacy_home;
+    ImageView setting_image;
     public LinearLayout patient, appointment, lab_test, test_result,message,emergency;
     public LinearLayout home_view,patient_view,appointment_view,profile_view,create_test_view;
 
@@ -77,6 +79,7 @@ public class Partners_AmbulanceHome extends AppCompatActivity {
         create_test_view = (LinearLayout) findViewById(R.id.create_test_view);
         profile_view = (LinearLayout) findViewById(R.id.profile_view);
         message=(LinearLayout)findViewById(R.id.message);
+        setting_image = (ImageView) findViewById(R.id.setting_image);
         View viewinflate = getLayoutInflater().inflate(R.layout.ambulance_home_header, null);
         View viewinflate_footer = getLayoutInflater().inflate(R.layout.nav_footer_main, null);
 
@@ -97,6 +100,16 @@ public class Partners_AmbulanceHome extends AppCompatActivity {
             }
 
         };
+
+        setting_image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+               Intent intent = new Intent(Partners_AmbulanceHome.this , Profile_Info_Activity.class);
+               startActivity(intent);
+            }
+        });
 
         drawer_layout.setDrawerListener(mDrawerToggle);
 
@@ -133,12 +146,8 @@ public class Partners_AmbulanceHome extends AppCompatActivity {
                     //   finish();
                 } else if (i == 4) {
 
-//                    FragmentManager fragmentManager = getFragmentManager();
-//                    FragmentTransaction fragmentTransaction = fragmentManager
-//                            .beginTransaction();
-//                    Doctor_My_Payments fragmentS1 = new Doctor_My_Payments();
-//                    getSupportFragmentManager().beginTransaction().add(android.R.id.content, fragmentS1).commit();
-
+                    Intent intent  = new Intent(Partners_AmbulanceHome.this , Partners_Emergency_Activity_Tab.class);
+                    startActivity(intent);
 
 
                 } else if (i == 7) {

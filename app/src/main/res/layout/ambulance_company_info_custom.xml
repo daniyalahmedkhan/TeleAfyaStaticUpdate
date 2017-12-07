@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        >
+
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/company_name"
+            android:id="@+id/ImageComp"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is Some Text"
+            android:layout_marginLeft="33dp"
+            android:textColor="@color/colorText"
+            android:id="@+id/Title1"
+            android:layout_marginTop="-7dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

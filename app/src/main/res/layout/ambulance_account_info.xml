@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="20dp"
+                android:id="@+id/Reltive1"
+                android:background="@color/colorWhite">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/chase_bank"
+                    android:id="@+id/bankImage"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/sort"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentRight="true"
+                    />
+
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CHASE BANK"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/BankName"
+                    android:layout_below="@id/bankImage"
+                    android:textColor="@color/colorText"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Natraj studio, Azad Nagar, Andheri East, Mumabi,"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/BankAdd"
+                    android:gravity="center"
+                    android:layout_below="@id/BankName"
+                    />
+
+
+                <TextView
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Maharashat 40047"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/BankAdd2"
+                    android:layout_below="@id/BankAdd"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/Activeimg"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/BankAdd2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@mipmap/active_sel_" />
+
+                <!--<View android:layout_width="match_parent"-->
+                <!--android:background="#000	"-->
+                <!--android:id="@+id/View1"-->
+                <!--android:layout_below="@id/BankAdd2"-->
+                <!--android:layout_marginTop="65dp"-->
+                <!--android:layout_height="1dp" />-->
+
+
+
+
+
+
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/BankAdd2"
+                    android:layout_marginTop="80dp"
+                    android:paddingTop="10dp"
+                    android:weightSum="3"
+                    android:paddingBottom="10dp"
+                    android:id="@+id/tabl1"
+                    android:layout_centerHorizontal="true"
+                    >
+
+
+
+
+
+                    <LinearLayout
+                        android:weightSum="3"
+                        android:id="@+id/table1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:gravity="center"
+
+                            android:id="@+id/text1"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Account Holder"
+                            android:textSize="12dp"
+
+                            />
+
+
+
+                        <TextView
+                            android:id="@+id/text2"
+                            android:gravity="center"
+
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Account Number"
+
+                            android:textSize="12dp"
+
+
+                            />
+
+
+
+                        <TextView
+                            android:id="@+id/text3"
+
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+
+                            android:text="Unique Code"
+                            android:textSize="12dp"
+
+
+                            />
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/table2"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:id="@+id/text4"
+                            android:layout_column="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Arvind Patel"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorText"
+                            android:layout_gravity="center"
+                            android:textSize="12dp"
+
+                            />
+
+
+
+                        <TextView
+                            android:gravity="center"
+
+                            android:textStyle="bold"
+                            android:id="@+id/text5"
+                            android:layout_column="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="84758693125"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorText"
+                            android:layout_gravity="center"
+                            android:textSize="12dp"
+
+
+                            />
+
+
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:gravity="center"
+
+                            android:id="@+id/text6"
+                            android:layout_column="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="458793"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorText"
+                            android:textSize="12dp"
+
+
+                            />
+
+
+
+                    </LinearLayout>
+
+                    <!--<View android:layout_width="match_parent"-->
+                    <!--android:background="#C0C0C0	"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_height="1dp"  />-->
+
+
+                    <LinearLayout
+                        android:weightSum="3"
+                        android:id="@+id/table3"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:id="@+id/text7"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Swift Code"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:textSize="12dp"
+
+                            />
+
+
+
+                        <TextView
+                            android:id="@+id/text8"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="IFSC Code"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:textSize="12dp"
+
+
+                            />
+
+
+
+                        <TextView
+                            android:id="@+id/text9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:text="Branch"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textSize="12dp"
+
+
+                            />
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:weightSum="3"
+                        android:id="@+id/table4"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:id="@+id/text10"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Arvind Patel"
+                            android:textColor="@color/colorText"
+                            android:textSize="12dp"
+
+                            />
+
+
+
+                        <TextView
+                            android:textStyle="bold"
+
+                            android:id="@+id/text11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="CHE452361"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorText"
+                            android:gravity="center"
+                            android:textSize="12dp"
+
+
+                            />
+
+
+
+                        <TextView
+                            android:textStyle="bold"
+
+                            android:id="@+id/text12"
+                            android:layout_column="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="Chakala Andheri"
+                            android:textColor="@color/colorText"
+                            android:textSize="12dp"
+
+
+                            />
+
+
+
+                    </LinearLayout>
+
+
+
+
+                </TableLayout>
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="20dp"
+                android:id="@+id/Reltive2"
+                android:layout_below="@id/Reltive1"
+                android:background="@color/colorWhite">
+
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/m_pesa"
+                    android:id="@+id/bankImage2"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/sort"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentRight="true"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="M-PESA"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/BankName2"
+                    android:layout_below="@id/bankImage2"
+                    android:textColor="@color/colorText"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <ImageView
+                    android:id="@+id/imgActive2"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/BankName2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/active_sel_" />
+
+
+
+
+
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/imgActive2">
+
+                    <TableRow
+                        android:id="@+id/table5"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:weightSum="4"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/text13"
+                            android:layout_column="1"
+                            android:layout_weight="2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mobile Numeber"
+                            android:layout_marginRight="10dp"
+                            android:textSize="12dp"
+
+                            />
+
+
+
+                        <TextView
+                            android:id="@+id/text14"
+                            android:layout_column="1"
+                            android:layout_weight="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Account Type"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="12dp"
+
+
+                            />
+
+
+
+
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/table6"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:weightSum="4"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:id="@+id/text15"
+                            android:layout_column="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Arvind Patel"
+                            android:layout_weight="2"
+                            android:textColor="@color/colorText"
+                            android:layout_gravity="center"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            />
+
+
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:id="@+id/text16"
+                            android:layout_column="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="84758693125"
+                            android:textColor="@color/colorText"
+                            android:layout_gravity="center"
+                            android:textSize="12dp"/>
+
+
+
+
+
+                    </TableRow>
+
+
+
+
+
+                </TableLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

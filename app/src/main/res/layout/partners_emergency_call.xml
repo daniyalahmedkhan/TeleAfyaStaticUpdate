@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/user_msg_pimage"
+            android:background="@mipmap/gonzalo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="#346da3"
+                android:text="Gonzalo Leyendecker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:background="@mipmap/call_income"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:textColor="#346da3"
+
+                    android:layout_marginLeft="5dp"
+                    android:textSize="10sp"
+                    android:text="(5) incoming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:textColor="#d4cece"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="8sp"
+                android:text=":00:00:10 AM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="20dp"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:background="@drawable/circle_blue"
+                android:gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp">
+                <ImageView
+                    android:id="@+id/call_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/menu_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#fff"
+            android:paddingTop="15dp"
+            android:weightSum="5">
+
+
+            <LinearLayout
+                android:id="@+id/home_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+
+
+                <ImageView
+                    android:id="@+id/home_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/home" />
+
+                <TextView
+                    android:id="@+id/home_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="HOME"
+                    android:textColor="#346da3"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/patient_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/provider_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/patients_view" />
+
+                <TextView
+                    android:id="@+id/top_text"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="PATIENTS"
+                    android:textSize="10sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/appointment_view"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/notification_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/appoitments" />
+
+                <TextView
+                    android:id="@+id/notification_text"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="APPOINTMENTS"
+                    android:textSize="10sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/create_test_view"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/messages_unselect" />
+
+                <TextView
+                    android:id="@+id/profile_text"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="MESSAGE"
+                    android:textSize="10sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/profile_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/setting_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/phome_profile" />
+
+                <TextView
+                    android:id="@+id/setting_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="PROFILE"
+                    android:textSize="10sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

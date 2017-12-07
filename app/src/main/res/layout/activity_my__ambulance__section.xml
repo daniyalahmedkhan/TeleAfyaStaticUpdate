@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ast.teleafya.Ui.Partners.Ambulance.Ambulance.My_Ambulance_SectionActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/toolbar_outside"
+        android:background="@mipmap/profile_bg"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:text="Emergency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/back_home"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="15dp"
+            android:background="@mipmap/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/vector"
+            android:id="@+id/vector"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/txt"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:text="Ambulance not attached yet"
+            android:textColor="@color/colorText"
+            android:layout_below="@id/vector"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:text="Lorem Ispum is simply dummy text"
+            android:layout_below="@id/txt"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Ambulance"
+                android:id="@+id/buttnAdd"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/colorWhite"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/button_edges_blue"
+
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

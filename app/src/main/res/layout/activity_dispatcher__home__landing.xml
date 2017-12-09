@@ -45,7 +45,7 @@
                 android:textStyle="bold"
                 android:textSize="20sp"
                 android:textColor="#fff"
-                android:text="Welcome Dr.John"
+                android:text="Welcome i can service Inc"
                 android:layout_centerInParent="true"
                 android:layout_centerHorizontal="true"
                 android:layout_below="@+id/diagnostic_user_image"
@@ -55,7 +55,7 @@
             <TextView
                 android:textSize="12sp"
                 android:textColor="#fff"
-                android:text="You've 25 Appointment Schedule Today"
+                android:text="you've 25 calls Today"
                 android:layout_centerInParent="true"
                 android:layout_centerHorizontal="true"
                 android:layout_below="@+id/diagnostic_user_name"
@@ -179,7 +179,7 @@
 
                                             android:textStyle="bold"
                                             android:textColor="#346da3"
-                                            android:text="APPOINTMENT"
+                                            android:text="MY PROVIDERS"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content" />
                                         <TextView
@@ -247,7 +247,7 @@
 
                                             android:textStyle="bold"
                                             android:textColor="#346da3"
-                                            android:text="MESSAGES "
+                                            android:text="CALLS HISTORY"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content" />
                                         <TextView
@@ -296,7 +296,7 @@
 
                                             android:textStyle="bold"
                                             android:textColor="#346da3"
-                                            android:text="EMERGENCY"
+                                            android:text="APPOINTMENTS"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content" />
                                         <TextView
@@ -364,7 +364,7 @@
 
                                             android:textStyle="bold"
                                             android:textColor="#346da3"
-                                            android:text="COMMUNITY"
+                                            android:text="TRANSPORT"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content" />
                                         <TextView
@@ -413,7 +413,7 @@
 
                                             android:textStyle="bold"
                                             android:textColor="#346da3"
-                                            android:text="ACTIVITES"
+                                            android:text="ORDER MEDICINES"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content" />
                                         <TextView
@@ -538,7 +538,7 @@
 
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:text="APPOINTMENTS"
+                    android:text="PROVIDERS "
                     android:textSize="10sp" />
 
 
@@ -558,7 +558,7 @@
                     android:id="@+id/profile_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@mipmap/messages_unselect" />
+                    android:src="@mipmap/emergency" />
 
                 <TextView
                     android:id="@+id/profile_text"
@@ -566,7 +566,7 @@
 
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:text="MESSAGE"
+                    android:text="CALL"
                     android:textSize="10sp" />
 
 

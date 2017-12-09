@@ -117,7 +117,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="10dp"
-                                    android:background="@mipmap/my_patients" />
+                                    android:background="@mipmap/ambulance" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -228,7 +228,7 @@
 
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="10dp"
-                                        android:background="@mipmap/lab_tests" />
+                                        android:background="@mipmap/order_chat" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
@@ -278,7 +278,7 @@
 
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="10dp"
-                                        android:background="@mipmap/test_result" />
+                                        android:background="@mipmap/emergency" />
 
                                     <TextView
                                         android:id="@+id/textView2"

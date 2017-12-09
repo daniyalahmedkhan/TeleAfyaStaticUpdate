@@ -49,10 +49,11 @@
         android:layout_height="wrap_content"
         android:paddingBottom="20dp"
         android:paddingTop="20dp"
+        android:layout_gravity="center"
         android:layout_marginLeft="5dp">
 
         <RelativeLayout
-            android:layout_width="wrap_content"
+                android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             >
@@ -64,24 +65,29 @@
 
             >
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/img_1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/advanced"
+                />
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/air"
                 />
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@mipmap/img_2"
+                android:src="@mipmap/basic"
                 />
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/img_3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/motorcycle"
                 />
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/img_4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/advanced"
                 />
 
         </LinearLayout>
@@ -135,6 +141,8 @@
                 android:text="Ambulance Information"
                 android:textColor="@color/colorText"
                 android:layout_margin="10dp"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@mipmap/ambulance_information"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                 android:textStyle="bold"
                 />
@@ -160,7 +168,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@mipmap/dr_img"
+                android:src="@mipmap/ambulance_img"
                 />
 
             <LinearLayout
@@ -211,6 +219,8 @@
                 android:layout_height="wrap_content"
                 android:background="@color/transparent"
                 android:hint="Registration Number"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@mipmap/business"
                 android:textColorHint="@color/colorText"
                 />
 
@@ -239,6 +249,8 @@
                 android:layout_height="wrap_content"
                 android:background="@color/transparent"
                 android:hint="How old your ambulance "
+                android:drawableLeft="@mipmap/calendar2"
+                android:drawablePadding="20dp"
                 android:textColorHint="@color/colorText"
                 />
 
@@ -267,6 +279,8 @@
                 android:layout_height="wrap_content"
                 android:background="@color/transparent"
                 android:hint="Insurance Value"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@mipmap/insurance"
                 android:textColorHint="@color/colorText"
                 />
 
@@ -295,6 +309,8 @@
                 android:layout_height="wrap_content"
                 android:background="@color/transparent"
                 android:hint="Ambulance Documents"
+                android:drawableLeft="@mipmap/documents"
+                android:drawablePadding="20dp"
                 android:textColorHint="@color/colorText"
                 />
 

@@ -263,7 +263,19 @@
             android:name=".Ui.Partners.Ambulance.Ambulance.partners_ambulance_past_requestActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
-        <activity android:name=".Ui.Partners.Ambulance.Ambulance.Profile_Info_Activity"
+        <activity
+            android:name=".Ui.Partners.Ambulance.Ambulance.Profile_Info_Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".Ui.Partners.Ambulance.Dispatcher.Dispatcher_Home_Landing"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".Ui.Partners.Ambulance.Dispatcher.Dispatcher_MyAppointment_Tab"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".Ui.Partners.Ambulance.Dispatcher.Dispatcher_MessageTab"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
             ></activity>

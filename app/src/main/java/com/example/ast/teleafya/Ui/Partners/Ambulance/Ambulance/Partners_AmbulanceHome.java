@@ -16,6 +16,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 import com.example.ast.teleafya.R;
 import com.example.ast.teleafya.Ui.Adapters.Navigations_ItemsAdapter;
@@ -32,8 +33,8 @@ import com.readystatesoftware.systembartint.SystemBarTintManager;
 public class Partners_AmbulanceHome extends AppCompatActivity {
 
     public String[] menuName = {"NEW REQUEST", "MY AMBULANCES", "PAST REQUEST", "EMERGENCY CALLS", "MESSAGES", "PAYMENTS", "ABOUT US", "SETTINGS" , "HELP" ,  "FEEDBACK"};
-    public int[] menuicons = {R.mipmap.appointments, R.mipmap.patients, R.mipmap.add_medicines,
-            R.mipmap.payments,R.mipmap.about_us, R.mipmap.settings, R.mipmap.help, R.mipmap.feedback , 0 , 0};
+    public int[] menuicons = {R.mipmap.new_menu_requests, R.mipmap.menu_requests, R.mipmap.gray_check,
+            R.mipmap.app_call,R.mipmap.chat, R.mipmap.payments, R.mipmap.about_us, R.mipmap.settings , R.mipmap.help, R.mipmap.feedback};
     public DrawerLayout drawer_layout;
     public ListView mDrawerList;
     private ActionBarDrawerToggle mDrawerToggle;

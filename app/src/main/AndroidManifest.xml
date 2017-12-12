@@ -275,10 +275,20 @@
             android:name=".Ui.Partners.Ambulance.Dispatcher.Dispatcher_MyAppointment_Tab"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
-        <activity android:name=".Ui.Partners.Ambulance.Dispatcher.Dispatcher_MessageTab"
+        <activity
+            android:name=".Ui.Partners.Ambulance.Dispatcher.Dispatcher_MessageTab"
             android:theme="@style/AppTheme.NoActionBar"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
-            ></activity>
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".Ui.Partners.Ambulance.Dispatcher.Dispatcher_My_Patient_Dashboard"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".Ui.Partners.Ambulance.Dispatcher.Dispatcher_My_Payment_Transaction_Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".Ui.Partners.Ambulance.Dispatcher.Dispatcher_Order_Medicine_Activity" />
+        <activity android:name=".Ui.Partners.Ambulance.Dispatcher.Dispatcher_Profile_Info_Activity"></activity>
     </application>
 
 </manifest>

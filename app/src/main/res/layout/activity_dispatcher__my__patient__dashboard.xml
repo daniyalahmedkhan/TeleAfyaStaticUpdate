@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:id="@+id/activity_health"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/update_post_header"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@mipmap/profile_bg">
+
+        <ImageView
+            android:id="@+id/back_image"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/back" />
+
+        <ImageView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="35dp"
+            android:id="@+id/diagnostic_user_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/timeline" />
+
+        <TextView
+            android:id="@+id/diagnostic_user_name"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:text="Shivank Sharma"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/diagnostic_user_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="140dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:weightSum="2"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.v7.widget.CardView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp"
+                                app:cardUseCompatPadding="true"
+                                android:padding="10dp"
+
+                                >
+
+                                <LinearLayout
+                                    android:layout_marginBottom="15dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:id="@+id/Linear1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:layout_marginTop="20dp"
+
+                                        android:background="@mipmap/health"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_marginTop="10dp"
+
+                                        android:textStyle="bold"
+                                        android:textColor="#346da3"
+                                        android:text="APPOINTMENTS"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:padding="5dp"
+                                        android:layout_marginTop="10dp"
+                                        android:gravity="center"
+                                        android:textSize="10sp"
+                                        android:textColor="#bab9b9"
+                                        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+
+                            </android.support.v7.widget.CardView>
+                            <android.support.v7.widget.CardView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginLeft="5dp"
+                                app:cardUseCompatPadding="true"
+                                android:padding="10dp"
+
+                                >
+
+                                <LinearLayout
+                                    android:layout_marginBottom="15dp"
+                                    android:gravity="center"
+                                    android:id="@+id/Document"
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:layout_marginTop="20dp"
+
+                                        android:background="@mipmap/health"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:layout_marginTop="10dp"
+
+                                        android:textStyle="bold"
+                                        android:textColor="#346da3"
+                                        android:text="HEALTH PROFILE"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:padding="5dp"
+
+                                        android:layout_marginTop="10dp"
+                                        android:gravity="center"
+                                        android:textSize="10sp"
+                                        android:textColor="#bab9b9"
+                                        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+
+                            </android.support.v7.widget.CardView>
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:weightSum="2"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.v7.widget.CardView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp"
+                                app:cardUseCompatPadding="true"
+                                android:padding="10dp"
+
+                                >
+
+                                <LinearLayout
+                                    android:id="@+id/test_order_provider"
+                                    android:layout_marginBottom="15dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:layout_marginTop="20dp"
+
+                                        android:background="@mipmap/medication"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_marginTop="10dp"
+
+                                        android:textStyle="bold"
+                                        android:textColor="#346da3"
+                                        android:text="MEDICATION"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:padding="5dp"
+
+                                        android:layout_marginTop="10dp"
+                                        android:gravity="center"
+                                        android:textSize="10sp"
+                                        android:textColor="#bab9b9"
+                                        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+
+                            </android.support.v7.widget.CardView>
+                            <android.support.v7.widget.CardView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginLeft="5dp"
+                                app:cardUseCompatPadding="true"
+                                android:padding="10dp"
+
+                                >
+
+                                <LinearLayout
+                                    android:id="@+id/family_provider"
+                                    android:layout_marginBottom="15dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:layout_marginTop="20dp"
+
+                                        android:background="@mipmap/vaccinations"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:layout_marginTop="10dp"
+
+                                        android:textStyle="bold"
+                                        android:textColor="#346da3"
+                                        android:text="VACCINATION"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:padding="5dp"
+
+                                        android:layout_marginTop="10dp"
+                                        android:gravity="center"
+                                        android:textSize="10sp"
+                                        android:textColor="#bab9b9"
+                                        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+
+                            </android.support.v7.widget.CardView>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:weightSum="2"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.v7.widget.CardView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp"
+                                app:cardUseCompatPadding="true"
+                                android:padding="10dp"
+
+                                >
+
+                                <LinearLayout
+                                    android:id="@+id/test_order_provider2"
+                                    android:layout_marginBottom="15dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:layout_marginTop="20dp"
+
+                                        android:background="@mipmap/my_documents"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_marginTop="10dp"
+
+                                        android:textStyle="bold"
+                                        android:textColor="#346da3"
+                                        android:text="DOCUMENTS"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:padding="5dp"
+
+                                        android:layout_marginTop="10dp"
+                                        android:gravity="center"
+                                        android:textSize="10sp"
+                                        android:textColor="#bab9b9"
+                                        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+
+                            </android.support.v7.widget.CardView>
+                            <android.support.v7.widget.CardView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginLeft="5dp"
+                                app:cardUseCompatPadding="true"
+                                android:padding="10dp"
+
+                                >
+
+                                <LinearLayout
+                                    android:id="@+id/family_provider2"
+                                    android:layout_marginBottom="15dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:layout_marginTop="20dp"
+
+                                        android:background="@mipmap/vaccinations"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:layout_marginTop="10dp"
+
+                                        android:textStyle="bold"
+                                        android:textColor="#346da3"
+                                        android:text="REMINDERS"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:padding="5dp"
+
+                                        android:layout_marginTop="10dp"
+                                        android:gravity="center"
+                                        android:textSize="10sp"
+                                        android:textColor="#bab9b9"
+                                        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+
+                            </android.support.v7.widget.CardView>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

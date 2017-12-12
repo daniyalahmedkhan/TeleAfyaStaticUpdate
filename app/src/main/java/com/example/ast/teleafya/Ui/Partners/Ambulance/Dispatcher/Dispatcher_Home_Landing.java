@@ -36,7 +36,7 @@ public class Dispatcher_Home_Landing extends AppCompatActivity {
 
     public LinearLayout patient_view , profile_view , appointment_view1;
     public LinearLayout home_view,provider_container,appointment_view,message_view,timeline_view;
-    public String[] menuName= {"APPOINTMENTS","PATIENTS","MESSAGES","PAYMENT","BANK DETAILS","EMERGENCY","TRANSPORT","ABOUT","SETTING","HELP","FEEDBACK"};
+    public String[] menuName= {"APPOINTMENTS","PATIENTS","MESSAGES","PAYMENT","ORDER MEDICINE","EMERGENCY","TRANSPORT","ABOUT","SETTING","HELP","FEEDBACK"};
     public int[] menuicons = {R.mipmap.appointments,R.mipmap.patients,R.mipmap.messages_icon,
             R.mipmap.payments,R.mipmap.bank_details,R.mipmap.emergency_icon,R.mipmap.transport,
             R.mipmap.about,R.mipmap.settings,R.mipmap.help,R.mipmap.feedback};
@@ -191,25 +191,23 @@ public class Dispatcher_Home_Landing extends AppCompatActivity {
                     //   finish();
                 } else if (i == 4) {
 
-//                    FragmentManager fragmentManager = getFragmentManager();
-//                    FragmentTransaction fragmentTransaction = fragmentManager
-//                            .beginTransaction();
-//                    Doctor_My_Payments fragmentS1 = new Doctor_My_Payments();
-//                    getSupportFragmentManager().beginTransaction().add(android.R.id.content, fragmentS1).commit();
-//
+
+                    Intent intent = new Intent(Dispatcher_Home_Landing.this , Dispatcher_My_Payment_Transaction_Activity.class);
+                    startActivity(intent);
 
 
                 } else if (i == 7) {
 //                    Intent intent = new Intent(Doctor_HomeActivity.this, Saved_Article.class);
 //                    startActivity(intent);
                     //  finish();
+
                     drawer_layout.closeDrawer(mDrawerList);
 
                 } else if (i == 5) {
 
 //
-//                    Intent intent = new Intent(Doctor_HomeActivity.this, Order_Activity.class);
-//                    startActivity(intent);
+                    Intent intent = new Intent(Dispatcher_Home_Landing.this, Dispatcher_Order_Medicine_Activity.class);
+                    startActivity(intent);
 
 
                 }

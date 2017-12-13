@@ -29,7 +29,7 @@
         android:label="@string/app_name"
         android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="false"
+        android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
             android:name=".Ui.Activities.User_Selection_Screen"
@@ -287,8 +287,20 @@
             android:name=".Ui.Partners.Ambulance.Dispatcher.Dispatcher_My_Payment_Transaction_Activity"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
-        <activity android:name=".Ui.Partners.Ambulance.Dispatcher.Dispatcher_Order_Medicine_Activity" />
-        <activity android:name=".Ui.Partners.Ambulance.Dispatcher.Dispatcher_Profile_Info_Activity"></activity>
+        <activity
+            android:name=".Ui.Partners.Ambulance.Dispatcher.Dispatcher_Order_Medicine_Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".Ui.Partners.Ambulance.Dispatcher.Dispatcher_Profile_Info_Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".Ui.Partners.Ambulance.Transport.Transport_Call_Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".Ui.Partners.Ambulance.Transport.Transport_Message_Activity" />
+        <activity android:name=".Ui.Partners.Ambulance.Transport.My_Car_Activity"></activity>
     </application>
 
 </manifest>

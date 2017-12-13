@@ -26,8 +26,19 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:id="@+id/tab_cont"
-                    android:background="@mipmap/top_logo_bg"
+                    android:background="@mipmap/profile_bg"
                     android:layout_height="200dp">
+
+
+
+                        <in.goodiebag.carouselpicker.CarouselPicker
+                            android:id="@+id/carousel"
+                            android:layout_marginTop="80dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            app:items_visible="three" />
 
 
                     <android.support.design.widget.TabLayout

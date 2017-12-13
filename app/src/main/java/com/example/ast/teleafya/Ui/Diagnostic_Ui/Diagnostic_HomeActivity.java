@@ -30,15 +30,15 @@ import com.example.ast.teleafya.Ui.Pharmacy_Ui.ProfileActivity;
 import com.readystatesoftware.systembartint.SystemBarTintManager;
 
 public class Diagnostic_HomeActivity extends AppCompatActivity {
-    public String[] menuName = {"APPOINTMENTS", "PATIENTS LIST", "CREATE TEST", "TEST RESULT", "ABOUT", "SETTING", "HELP", "FEEDBACK"};
-    public int[] menuicons = {R.mipmap.appointments, R.mipmap.patients, R.mipmap.add_medicines,
+    public  String[] menuName = {"APPOINTMENTS", "PATIENTS LIST", "CREATE TEST", "TEST RESULT", "ABOUT", "SETTING", "HELP", "FEEDBACK"};
+    public  int[] menuicons = {R.mipmap.appointments, R.mipmap.patients, R.mipmap.add_medicines,
             R.mipmap.payments,R.mipmap.about_us, R.mipmap.settings, R.mipmap.help, R.mipmap.feedback};
-    public DrawerLayout drawer_layout;
-    public ListView mDrawerList;
+    public  DrawerLayout drawer_layout;
+    public  ListView mDrawerList;
     private ActionBarDrawerToggle mDrawerToggle;
-    public RelativeLayout pharmacy_home;
-    public LinearLayout patient, appointment, lab_test, test_result,message,emergency;
-    public LinearLayout home_view,patient_view,appointment_view,profile_view,create_test_view;
+    public  RelativeLayout pharmacy_home;
+    public  LinearLayout patient, appointment, lab_test, test_result,message,emergency;
+    public  LinearLayout home_view,patient_view,appointment_view,profile_view,create_test_view;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

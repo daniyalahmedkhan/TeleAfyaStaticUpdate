@@ -32,7 +32,7 @@ public class Partners_TransportHome extends AppCompatActivity {
 
     public  String[] menuName = {"RIDE REQUESTS", "MY CARS", "COMPLETED RIDES", "CALLS", "MESSAGES", "PAYMENTS", "ABOUT US", "SETTINGS " , "HELP", "FEEDBACK"};
     public  int[] menuicons = {R.mipmap.appointments, R.mipmap.patients, R.mipmap.add_medicines,
-            R.mipmap.payments,R.mipmap.about_us, R.mipmap.settings, R.mipmap.help, R.mipmap.feedback};
+            R.mipmap.payments,R.mipmap.about_us, R.mipmap.settings, R.mipmap.help, R.mipmap.feedback , 0 , 0};
     public  DrawerLayout drawer_layout;
     public  ListView mDrawerList;
     private ActionBarDrawerToggle mDrawerToggle;
@@ -62,15 +62,16 @@ public class Partners_TransportHome extends AppCompatActivity {
         }
 
         setContentView(R.layout.activity_partners__transport_home);
-        patient = (LinearLayout) findViewById(R.id.patient);
-        appointment = (LinearLayout) findViewById(R.id.appointment);
-        lab_test = (LinearLayout) findViewById(R.id.test_lab);
-        test_result = (LinearLayout) findViewById(R.id.test_result);
+        patient =   (LinearLayout) findViewById(R.id.patient);
+        appointment =   (LinearLayout) findViewById(R.id.appointment);
+        lab_test =      (LinearLayout) findViewById(R.id.test_lab);
+        test_result =   (LinearLayout) findViewById(R.id.test_result);
         drawer_layout = (DrawerLayout) findViewById(R.id.drawer_layout);
         pharmacy_home = (RelativeLayout) findViewById(R.id.pharmacy_home);
-        mDrawerList = (ListView) findViewById(R.id.left_drawer);
-        home_view = (LinearLayout) findViewById(R.id.home_view);
+        mDrawerList =   (ListView) findViewById(R.id.left_drawer);
+        home_view =     (LinearLayout) findViewById(R.id.home_view);
         patient_view = (LinearLayout) findViewById(R.id.patient_view);
+
         appointment_view = (LinearLayout) findViewById(R.id.appointment_view);
         create_test_view = (LinearLayout) findViewById(R.id.create_test_view);
         profile_view = (LinearLayout) findViewById(R.id.profile_view);
@@ -102,17 +103,19 @@ public class Partners_TransportHome extends AppCompatActivity {
 //                    Intent intent = new Intent(Diagnostic_HomeActivity.this, Diagnostic_Appointment_Activity.class);
 //                    startActivity(intent);
                 }else if(i==2){
-//                    Intent intent = new Intent(Diagnostic_HomeActivity.this, Open_OrderActivity.class);
-//                    startActivity(intent);
+                    Intent intent = new Intent(Partners_TransportHome.this, My_Car_Activity.class);
+                    startActivity(intent);
                 }else if(i==3){
 //                    Intent intent = new Intent(Diagnostic_HomeActivity.this, Create_Activity.class);
 //                    startActivity(intent);
                 }else if(i==4){
-//                    Intent intent = new Intent(Diagnostic_HomeActivity.this, Test_Result.class);
-//                    startActivity(intent);
+
+                    Intent intent = new Intent(Partners_TransportHome.this , Transport_Call_Activity.class);
+                    startActivity(intent);
+
                 }else if(i==5){
-//                    Intent intent = new Intent(Diagnostic_HomeActivity.this, Complete_OrderActivity.class);
-//                    startActivity(intent);
+                    Intent intent = new Intent(Partners_TransportHome.this, Transport_Message_Activity.class);
+                    startActivity(intent);
                 }else if(i==6){
 //                    Intent intent = new Intent(Diagnostic_HomeActivity.this, Cancel_OrderActivity.class);
 //                    startActivity(intent);

@@ -35,13 +35,11 @@ public class Ambulance_LoginActivity extends AppCompatActivity {
     public Patient_LoginPager patientLoginPager;
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ambulance__login);
-       initView();
+        initView();
 
 
         CarouselPicker carouselPicker = (CarouselPicker) findViewById(R.id.carousel);
@@ -49,11 +47,11 @@ public class Ambulance_LoginActivity extends AppCompatActivity {
         //Case 3 : To populate the picker with both images and text
         List<CarouselPicker.PickerItem> mixItems = new ArrayList<>();
         mixItems.add(new CarouselPicker.DrawableItem(R.mipmap.dispatcher));
-      //  mixItems.add(new CarouselPicker.TextItem("Dis", 20));
+        //  mixItems.add(new CarouselPicker.TextItem("Dis", 20));
         mixItems.add(new CarouselPicker.DrawableItem(R.mipmap.ambulance));
-      //  mixItems.add(new CarouselPicker.TextItem("Amb", 20));
+        //  mixItems.add(new CarouselPicker.TextItem("Amb", 20));
         mixItems.add(new CarouselPicker.DrawableItem(R.mipmap.transport));
-      //  mixItems.add(new CarouselPicker.TextItem("Tra", 20));
+        //  mixItems.add(new CarouselPicker.TextItem("Tra", 20));
         CarouselPicker.CarouselViewAdapter mixAdapter = new CarouselPicker.CarouselViewAdapter(this, mixItems, 0);
         carouselPicker.setAdapter(mixAdapter);
 
@@ -69,8 +67,6 @@ public class Ambulance_LoginActivity extends AppCompatActivity {
                 //position of the selected item
 
 
-
-
             }
 
             @Override
@@ -81,7 +77,6 @@ public class Ambulance_LoginActivity extends AppCompatActivity {
 
 
     }
-
 
 
     private void initView() {
@@ -123,7 +118,6 @@ public class Ambulance_LoginActivity extends AppCompatActivity {
         });
 
 
-
     }
 
 
@@ -157,7 +151,6 @@ public class Ambulance_LoginActivity extends AppCompatActivity {
             public void onTabUnselected(TabLayout.Tab tab) {
 
 
-
             }
 
             @Override
@@ -167,10 +160,10 @@ public class Ambulance_LoginActivity extends AppCompatActivity {
         });
 
 
-
     }
 
 
 
 
 }
+

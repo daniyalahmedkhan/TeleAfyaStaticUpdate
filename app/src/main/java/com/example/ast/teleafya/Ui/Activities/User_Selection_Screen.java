@@ -14,6 +14,7 @@ import com.example.ast.teleafya.Ui.Diagnostic_Ui.Diagnostic_HomeActivity;
 import com.example.ast.teleafya.Ui.Partners.Ambulance.Ambulance.Ambulance_LoginActivity;
 import com.example.ast.teleafya.Ui.Partners.Ambulance.Ambulance.Partners_AmbulanceHome;
 import com.example.ast.teleafya.Ui.Partners.Ambulance.Dispatcher.Dispatcher_Home_Landing;
+import com.example.ast.teleafya.Ui.Partners.Ambulance.Partner_Decide_Activity;
 import com.example.ast.teleafya.Ui.Partners.Ambulance.Transport.Partners_TransportHome;
 import com.example.ast.teleafya.Ui.Pharmacy_Ui.Pharmacy_HomeActivity;
 import com.readystatesoftware.systembartint.SystemBarTintManager;
@@ -92,7 +93,7 @@ public class User_Selection_Screen extends AppCompatActivity {
         partner_flow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent  =new Intent(User_Selection_Screen.this, Partners_TransportHome.class);
+                Intent intent  = new Intent(User_Selection_Screen.this, Partner_Decide_Activity.class);
                 startActivity(intent);
 
 

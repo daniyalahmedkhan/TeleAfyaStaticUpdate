@@ -299,8 +299,18 @@
             android:name=".Ui.Partners.Ambulance.Transport.Transport_Call_Activity"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
-        <activity android:name=".Ui.Partners.Ambulance.Transport.Transport_Message_Activity" />
-        <activity android:name=".Ui.Partners.Ambulance.Transport.My_Car_Activity"></activity>
+        <activity
+            android:name=".Ui.Partners.Ambulance.Transport.Transport_Message_Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".Ui.Partners.Ambulance.Transport.My_Car_Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".Ui.Partners.Ambulance.Partner_Decide_Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            ></activity>
     </application>
 
 </manifest>

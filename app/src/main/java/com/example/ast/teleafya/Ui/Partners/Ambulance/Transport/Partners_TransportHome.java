@@ -101,7 +101,9 @@ public class Partners_TransportHome extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 if(i==1){
 //                    Intent intent = new Intent(Diagnostic_HomeActivity.this, Diagnostic_Appointment_Activity.class);
-//                    startActivity(intent);
+//
+//
+//                  startActivity(intent);
                 }else if(i==2){
                     Intent intent = new Intent(Partners_TransportHome.this, My_Car_Activity.class);
                     startActivity(intent);

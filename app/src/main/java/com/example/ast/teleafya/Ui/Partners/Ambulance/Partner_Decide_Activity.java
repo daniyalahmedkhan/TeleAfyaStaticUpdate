@@ -14,6 +14,7 @@ import com.example.ast.teleafya.Ui.Partners.Ambulance.Ambulance.Ambulance_SignIn
 import com.example.ast.teleafya.Ui.Partners.Ambulance.Ambulance.add_ambulance;
 import com.example.ast.teleafya.Ui.Partners.Ambulance.Dispatcher.Dispatcher_LoginActivity;
 import com.example.ast.teleafya.Ui.Partners.Ambulance.Transport.Transport_Login;
+import com.example.ast.teleafya.Ui.Pharmacy_Ui.Custom_AccountAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -49,6 +50,8 @@ public class Partner_Decide_Activity extends AppCompatActivity {
         List<CarouselPicker.PickerItem> mixItems = new ArrayList<>();
         mixItems.add(new CarouselPicker.DrawableItem(R.mipmap.dispatcher));
         //  mixItems.add(new CarouselPicker.TextItem("Dis", 20));
+
+
         mixItems.add(new CarouselPicker.DrawableItem(R.mipmap.ambulance));
         //  mixItems.add(new CarouselPicker.TextItem("Amb", 20));
         mixItems.add(new CarouselPicker.DrawableItem(R.mipmap.transport));

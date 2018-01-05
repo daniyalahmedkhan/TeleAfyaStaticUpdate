@@ -54,6 +54,7 @@ public class Transport_Call_Activity extends AppCompatActivity {
         tabLayout.addTab(tabLayout.newTab().setText("SIGN IN "));
         tabLayout.addTab(tabLayout.newTab().setText("SIGN UP"));
 
+
         patientLoginPager = new Patient_LoginPager(Transport_Call_Activity.this.getSupportFragmentManager(), arrayList);
         //is line se tablayout k neche jo shade araaha hai woh change hoga pageviewer k mutabik
         viewPager.setAdapter(patientLoginPager);
